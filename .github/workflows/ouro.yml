@@ -22,9 +22,7 @@ jobs:
     
     - name: Test CETAK_TEKS
       run: |
-        cat > input.ouro << 'INEOF'
-CETAK_TEKS "Halo dari CI!"
-BATAS_PROGRAM
-INEOF
+        echo 'CETAK_TEKS "Halo dari CI!"' > input.ouro
+        echo 'BATAS_PROGRAM' >> input.ouro
         ./bin/ouro_vm build/ouroc.obf 2>/dev/null
         ./bin/ouro_vm output.obf 2>/dev/null | grep "Halo" && echo "TEST OK" || echo "TEST FAIL"
