@@ -1,0 +1,21 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kompiler_loop.ouro"
+    
+    SIMPAN LOOP_COUNTER 0
+    SIMPAN LOOP_LABEL_ID 0
+    
+    CETAK_TEKS "[PARSER] Loop Support Ready"
+    CETAK_TEKS "[OPCODES]"
+    CETAK_TEKS "  31 - LOMPAT_KE (unconditional jump)"
+    CETAK_TEKS "  32 - LOMPAT_JIKA_SALAH (jump if not equal)"
+    CETAK_TEKS "  34 - LOMPAT_JIKA_BENAR (jump if equal)"
+    CETAK_TEKS "  33 - TANDA (label marker)"
+    CETAK_TEKS ""
+    CETAK_TEKS "[ALGORITHM] SELAMA Processing:"
+    CETAK_TEKS "  1. Baca SELAMA keyword"
+    CETAK_TEKS "  2. Generate TANDA_LOOP_{ID}"
+    CETAK_TEKS "  3. Proses condition & body"
+    CETAK_TEKS "  4. Jika HENTIKAN -> LOMPAT_KE TANDA_LOOP_END"
+    CETAK_TEKS "  5. Jika BATAS_SELAMA -> LOMPAT_KE TANDA_LOOP"
+    CETAK_TEKS "  6. Generate TANDA_LOOP_END_{ID}"
+BATAS_PROGRAM
