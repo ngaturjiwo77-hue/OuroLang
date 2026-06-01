@@ -1,3 +1,5 @@
+[![CI](https://github.com/ngaturjiwo77-hue/ourolang/actions/workflows/ouro.yml/badge.svg)]
+
 # OUROLANG - Bahasa Pemrograman Indonesia Mandiri
 
 > Self-hosted programming language in Bahasa Indonesia
