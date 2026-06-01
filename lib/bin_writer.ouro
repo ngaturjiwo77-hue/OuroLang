@@ -1,0 +1,13 @@
+# === MODUL PENULIS BINER (bin_writer.ouro) ===
+# Murni menulis byte mentah (0-255)
+
+FUNGSI_PARAM TULIS_INSTRUKSI_1BYTE FD_BIN OPCODE
+    TULIS_KARAKTER FD_BIN OPCODE
+BATAS_FUNGSI
+
+FUNGSI_PARAM TULIS_DATA_4BYTE FD_BIN DATA
+    # Memecah data 4-byte menjadi 4 potongan 1-byte
+    # (Little Endian format yang disukai prosesor modern)
+    TULIS_KARAKTER FD_BIN DATA
+    # ... instruksi pergeseran bit (bit-shift) akan menyusul
+BATAS_FUNGSI

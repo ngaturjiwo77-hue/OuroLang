@@ -1,0 +1,3 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "Halo dari Ourolang!\n"
+BATAS_PROGRAM

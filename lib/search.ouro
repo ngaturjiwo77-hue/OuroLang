@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== SEARCH ALGORITHMS ==="
+    CETAK_TEKS "binary, linear, hash"
+    CETAK_TEKS "======================"
+BATAS_PROGRAM

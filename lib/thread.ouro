@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== THREAD MANAGER ==="
+    CETAK_TEKS "create, join, lock"
+    CETAK_TEKS "===================="
+BATAS_PROGRAM

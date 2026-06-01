@@ -1,0 +1,45 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/http.ouro"
+    BAWAKAN "lib/regex.ouro"
+    BAWAKAN "lib/json.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    
+    PANGGIL KOTAK_ATAS 40
+    PANGGIL_PARAM KOTAK_TENGAH "WEB SCRAPER OURO" 40
+    PANGGIL KOTAK_BAWAH 40
+    
+    CETAK_TEKS "\n[*] Target: example.com\n")
+    CETAK_TEKS "[*] Mengekstrak data...\n\n")
+    
+    # Simulasi HTML
+    SIMPAN HTML "<html><title>OuroLang</title><body><h1>Halo</h1><p>Ini paragraf</p><a href='https://ouro.dev'>Link</a></body></html>"
+    
+    CETAK_TEKS "--- Ekstrak Title ---\n")
+    PANGGIL_KEMBALI TITLE REGEX_CARI "<title>[^<]+" HTML
+    CETAK_TEKS "[TITLE] "
+    CETAK_TEKS TITLE
+    CETAK_TEKS "\n")
+    
+    CETAK_TEKS "\n--- Ekstrak Link ---\n")
+    PANGGIL_KEMBALI LINKS REGEX_CARI "https?://[^\"]+" HTML
+    CETAK_TEKS "[LINK] "
+    CETAK_TEKS LINKS
+    CETAK_TEKS "\n")
+    
+    CETAK_TEKS "\n--- Validasi ---\n")
+    PANGGIL_KEMBALI VALID REGEX_VALIDASI_URL "https://ouro.dev"
+    BILA_SAMA VALID 1
+        CETAK_HIJAU "[OK] URL valid\n")
+    LAINNYA
+        CETAK_MERAH "[ERR] URL invalid\n")
+    BATAS_BILA
+    
+    CETAK_TEKS "\n--- Simpan JSON ---\n")
+    PANGGIL JSON_BUAT_OBJEK HASIL
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI HASIL "title" TITLE
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI HASIL "links" LINKS
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI HASIL "status" "success"
+    CETAK_HIJAU "[OK] Data JSON dibuat\n\n")
+    
+    PANGGIL_PARAM CETAK_HIJAU "[OK] Web scraper berhasil!\n"
+BATAS_PROGRAM

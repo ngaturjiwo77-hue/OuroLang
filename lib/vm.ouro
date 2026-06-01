@@ -1,0 +1,18 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== VM.OULO - Pustaka Virtual Machine ==="
+    CETAK_TEKS "Fungsi standar untuk eksekusi bytecode"
+    CETAK_TEKS ""
+    CETAK_TEKS "FUNGSI:"
+    CETAK_TEKS "  VM_MULAI       - Inisialisasi VM"
+    CETAK_TEKS "  VM_EKSEKUSI    - Eksekusi opcode"
+    CETAK_TEKS "  VM_SELESAI     - Akhiri VM"
+    CETAK_TEKS "  VM_LOOP        - Loop dengan counter"
+    CETAK_TEKS "  VM_KONDISI     - If-else condition"
+    CETAK_TEKS ""
+    CETAK_TEKS "OPCODE DIDUKUNG:"
+    CETAK_TEKS "  61=CETAK_TEKS, 62=CETAK_ANGKA"
+    CETAK_TEKS "  10=SIMPAN, 11=TAMBAH, 12=TAMBAH_VAR"
+    CETAK_TEKS "  21=KURANG, 22=KALI, 23=BAGI"
+    CETAK_TEKS "  30=SAMA_DENGAN, 40=JIKA, 42=LAINNYA"
+    CETAK_TEKS "  5=BAWAKAN, 2=BATAS_PROGRAM"
+BATAS_PROGRAM

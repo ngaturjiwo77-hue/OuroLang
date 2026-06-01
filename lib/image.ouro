@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== IMAGE PROCESSOR ==="
+    CETAK_TEKS "resize, crop, filter"
+    CETAK_TEKS "======================"
+BATAS_PROGRAM

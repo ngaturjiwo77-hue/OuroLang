@@ -1,0 +1,14 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "--- UJI ARITMATIKA LENGKAP ---\n"
+    
+    SIMPAN X 50
+    KALI X 4
+    CETAK_TEKS "50 x 4 = "
+    CETAK_ANGKA X
+    CETAK_TEKS "\n"
+    
+    KURANG X 25
+    CETAK_TEKS "200 - 25 = "
+    CETAK_ANGKA X
+    CETAK_TEKS "\n"
+BATAS_PROGRAM

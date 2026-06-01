@@ -1,0 +1,7 @@
+BAWAKAN pustaka_ujian.ouro
+
+PROGRAM_UTAMA
+    CETAK_TEKS "Biner berhasil membaca file lain! Angka Sakti: "
+    CETAK_ANGKA ANGKA_SAKTI
+    CETAK_TEKS "\n"
+BATAS_PROGRAM

@@ -1,0 +1,29 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== ALGORITMA OURO ==="
+    CETAK_TEKS ""
+    CETAK_TEKS "BUBBLE_SORT: Urutkan array"
+    CETAK_TEKS "BINARY_SEARCH: Cari data"
+    CETAK_TEKS "FIBONACCI: Deret fibonacci"
+    CETAK_TEKS "FAKTORIAL: Hitung faktorial"
+    CETAK_TEKS "PRIMA: Cek bilangan prima"
+    CETAK_TEKS "PALINDROM: Cek kata palindrom"
+    CETAK_TEKS ""
+    CETAK_TEKS "Contoh:"
+    SIMPAN N 5
+    CETAK_TEKS "Fibonacci(5) = "
+    SIMPAN A 0
+    SIMPAN B 1
+    SIMPAN I 0
+    SELAMA
+        SIMPAN C A
+        TAMBAH C B
+        SIMPAN A B
+        SIMPAN B C
+        TAMBAH I 1
+        SAMA_DENGAN I 3
+        JIKA
+            HENTIKAN
+        BATAS_JIKA
+    BATAS_SELAMA
+    CETAK_ANGKA B
+BATAS_PROGRAM

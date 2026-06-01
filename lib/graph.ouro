@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== GRAPH ALGORITHMS ==="
+    CETAK_TEKS "BFS, DFS, Dijkstra"
+    CETAK_TEKS "====================="
+BATAS_PROGRAM

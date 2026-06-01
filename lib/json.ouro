@@ -1,0 +1,97 @@
+# === OUROLIB: JSON SEDERHANA (json.ouro) ===
+# Setara modul 'json' di Python (versi minimal)
+
+FUNGSI_KEMBALI JSON_BUAT_OBJEK
+    SIMPAN JSON "{}"
+    KEMBALIKAN JSON
+BATAS_FUNGSI
+
+FUNGSI_PARAM JSON_TAMBAH_KUNCI OBJEK KUNCI NILAI
+    SIMPAN HASIL OBJEK
+    # Hapus '}' terakhir
+    PANGKAS_STRING HASIL 1
+    BILA_LEBIH PANJANG HASIL 1
+        TAMBAH_STRING HASIL ","
+    BATAS_BILA
+    TAMBAH_STRING HASIL "\""
+    TAMBAH_STRING HASIL KUNCI
+    TAMBAH_STRING HASIL "\":"
+    
+    # Deteksi tipe nilai
+    BILA_APAKAH_ANGKA NILAI
+        TAMBAH_STRING HASIL NILAI
+    LAINNYA
+        TAMBAH_STRING HASIL "\""
+        TAMBAH_STRING HASIL NILAI
+        TAMBAH_STRING HASIL "\""
+    BATAS_BILA
+    
+    TAMBAH_STRING HASIL "}"
+    KEMBALIKAN HASIL
+BATAS_FUNGSI
+
+FUNGSI_KEMBALI JSON_DAPATKAN OBJEK KUNCI
+    SIMPAN HASIL ""
+    SIMPAN PJ 0
+    HITUNG_PANJANG PJ OBJEK
+    
+    # Cari kunci dalam string JSON
+    SIMPAN I 0
+    SELAMA_KURANG I PJ
+        SIMPAN KAR 0
+        AMBIL_KARAKTER KAR OBJEK I
+        BILA_SAMA KAR 34
+            # Baca kunci
+            SIMPAN KUNCI_DITEMUKAN ""
+            NAIK I
+            SELAMA_KURANG I PJ
+                AMBIL_KARAKTER KAR OBJEK I
+                BILA_SAMA KAR 34
+                    HENTIKAN
+                BATAS_BILA
+                TAMBAH_STRING KUNCI_DITEMUKAN KAR
+                NAIK I
+            BATAS_SELAMA
+            
+            # Cek apakah kunci cocok
+            PANGGIL_KEMBALI COCOK APAKAH_SAMA KUNCI_DITEMUKAN KUNCI
+            BILA_SAMA COCOK 1
+                # Skip ':'
+                NAIK I 2
+                # Baca nilai
+                SELAMA_KURANG I PJ
+                    AMBIL_KARAKTER KAR OBJEK I
+                    BILA_SAMA KAR 44
+                        HENTIKAN
+                    BATAS_BILA
+                    BILA_SAMA KAR 125
+                        HENTIKAN
+                    BATAS_BILA
+                    BILA_BUKAN KAR 34
+                        TAMBAH_STRING HASIL KAR
+                    BATAS_BILA
+                    NAIK I
+                BATAS_SELAMA
+                KEMBALIKAN HASIL
+            BATAS_BILA
+        BATAS_BILA
+        NAIK I
+    BATAS_SELAMA
+    KEMBALIKAN ""
+BATAS_FUNGSI
+
+FUNGSI_KEMBALI JSON_DAFTAR_BUAT
+    SIMPAN JSON "[]"
+    KEMBALIKAN JSON
+BATAS_FUNGSI
+
+FUNGSI_PARAM JSON_DAFTAR_TAMBAH DAFTAR NILAI
+    SIMPAN HASIL DAFTAR
+    PANGKAS_STRING HASIL 1
+    BILA_LEBIH PANJANG HASIL 1
+        TAMBAH_STRING HASIL ","
+    BATAS_BILA
+    TAMBAH_STRING HASIL NILAI
+    TAMBAH_STRING HASIL "]"
+    KEMBALIKAN HASIL
+BATAS_FUNGSI

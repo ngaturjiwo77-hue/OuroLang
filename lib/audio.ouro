@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== AUDIO PLAYER ==="
+    CETAK_TEKS "play, pause, stop, volume"
+    CETAK_TEKS "========================="
+BATAS_PROGRAM

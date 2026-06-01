@@ -1,0 +1,12 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "╔══════════════════════════════════════╗"
+    CETAK_TEKS "║     APLIKASI OURO SEBENARNYA       ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ Ini adalah program Ouro asli       ║"
+    CETAK_TEKS "║ Dikompilasi oleh Compiler Ouro     ║"
+    CETAK_TEKS "║ Dijalankan oleh VM C               ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ 54 Pustaka | 100% Mandiri          ║"
+    CETAK_TEKS "║ HP Android + Termux                ║"
+    CETAK_TEKS "╚══════════════════════════════════════╝"
+BATAS_PROGRAM

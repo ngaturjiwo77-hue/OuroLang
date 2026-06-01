@@ -1,0 +1,43 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/database_nosql.ouro"
+    BAWAKAN "lib/json.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/log.ouro"
+    
+    PANGGIL KOTAK_ATAS 40
+    PANGGIL_PARAM KOTAK_TENGAH "NOSQL DATABASE MANAGER" 40
+    PANGGIL KOTAK_BAWAH 40
+    
+    CETAK_TEKS "\n[*] Inisialisasi database...\n")
+    PANGGIL_PARAM NOSQL_BUAT_KOLEKSI "users"
+    PANGGIL_PARAM LOG_INFO "Database users dibuat"
+    
+    # Insert data
+    CETAK_TEKS "\n--- Insert Data ---\n")
+    PANGGIL JSON_BUAT_OBJEK USER1
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI USER1 "nama" "Budi"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI USER1 "umur" "25"
+    PANGGIL_PARAM NOSQL_INSERT "users" USER1
+    CETAK_HIJAU "[INSERT] User Budi (25)\n")
+    
+    PANGGIL JSON_BUAT_OBJEK USER2
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI USER2 "nama" "Ani"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI USER2 "umur" "30"
+    PANGGIL_PARAM NOSQL_INSERT "users" USER2
+    CETAK_HIJAU "[INSERT] User Ani (30)\n")
+    
+    # Find data
+    CETAK_TEKS "\n--- Find Data ---\n")
+    PANGGIL_KEMBALI HASIL NOSQL_FIND "users" USER1
+    CETAK_TEKS "[FIND] Mencari 'Budi': ditemukan\n")
+    
+    # Count
+    CETAK_TEKS "\n--- Statistics ---\n")
+    PANGGIL_KEMBALI TOTAL NOSQL_COUNT "users"
+    CETAK_TEKS "[COUNT] Total users: ")
+    CETAK_ANGKA TOTAL
+    CETAK_TEKS "\n\n")
+    
+    PANGGIL_PARAM CETAK_HIJAU "[OK] Database manager berhasil!\n"
+    PANGGIL_PARAM LOG_INFO "Database manager selesai"
+BATAS_PROGRAM

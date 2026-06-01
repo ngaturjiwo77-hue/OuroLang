@@ -1,0 +1,35 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/visi.ouro"
+    BAWAKAN "lib/tensor.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    
+    PANGGIL KOTAK_ATAS 40
+    PANGGIL_PARAM KOTAK_TENGAH "IMAGE PROCESSOR OURO" 40
+    PANGGIL KOTAK_BAWAH 40
+    
+    CETAK_TEKS "\n[*] Memproses citra 5x5...\n\n")
+    
+    # Buat gambar 5x5
+    PANGGIL_PARAM TENSOR_1D_BUAT 25
+    SIMPAN I 0
+    SELAMA_KURANG I 25
+        SIMPAN NILAI I
+        KALI NILAI 10
+        PANGGIL_PARAM TENSOR_1D_SET I NILAI
+        NAIK I
+    BATAS_SELAMA
+    
+    CETAK_TEKS "--- Deteksi Tepi ---\n")
+    PANGGIL_PARAM DETEKSI_TEPI TENSOR_DATA HASIL 5 5
+    CETAK_HIJAU "[OK] Deteksi tepi selesai\n\n")
+    
+    CETAK_TEKS "--- Threshold ---\n")
+    PANGGIL_PARAM THRESHOLD TENSOR_DATA HASIL 128 5 5
+    CETAK_HIJAU "[OK] Threshold selesai\n\n")
+    
+    CETAK_TEKS "--- Resize 5x5 -> 10x10 ---\n")
+    PANGGIL_PARAM RESIZE TENSOR_DATA HASIL 5 5 10 10
+    CETAK_HIJAU "[OK] Resize selesai\n\n")
+    
+    PANGGIL_PARAM CETAK_HIJAU "[OK] Image processor berhasil!\n"
+BATAS_PROGRAM

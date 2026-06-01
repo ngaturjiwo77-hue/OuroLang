@@ -1,0 +1,63 @@
+# === OUROLIB: KONFIGURASI (konfig.ouro) ===
+# Setara 'configparser' Python
+
+FUNGSI_KEMBALI KONFIG_BACA FILE_PATH
+    SIMPAN ISI ""
+    BUKA_BACA FILE_PATH FD
+    BACA_SEMUA ISI FD
+    TUTUP_FILE FD
+    KEMBALIKAN ISI
+BATAS_FUNGSI
+
+FUNGSI_PARAM KONFIG_TULIS FILE_PATH DATA
+    BUKA_TULIS FILE_PATH FD
+    TULIS_FILE FD DATA
+    TUTUP_FILE FD
+BATAS_FUNGSI
+
+FUNGSI_KEMBALI KONFIG_DAPATKAN ISI KUNCI
+    SIMPAN NILAI ""
+    SIMPAN PJ 0
+    HITUNG_PANJANG PJ ISI
+    
+    SIMPAN I 0
+    SELAMA_KURANG I PJ
+        SIMPAN BARIS ""
+        # Baca satu baris
+        SELAMA_KURANG I PJ
+            SIMPAN KAR 0
+            AMBIL_KARAKTER KAR ISI I
+            BILA_SAMA KAR 10
+                NAIK I
+                HENTIKAN
+            BATAS_BILA
+            TAMBAH_STRING BARIS KAR
+            NAIK I
+        BATAS_SELAMA
+        
+        # Cek apakah baris dimulai dengan kunci=
+        PANGGIL_KEMBALI ADA APAKAH_DIMULAI BARIS KUNCI
+        BILA_SAMA ADA 1
+            # Ambil nilai setelah =
+            SIMPAN J 0
+            HITUNG_PANJANG J BARIS
+            SIMPAN K 0
+            SELAMA_KURANG K J
+                SIMPAN KR 0
+                AMBIL_KARAKTER KR BARIS K
+                BILA_SAMA KR 61
+                    TAMBAH K 1
+                    SELAMA_KURANG K J
+                        AMBIL_KARAKTER KR BARIS K
+                        TAMBAH_STRING NILAI KR
+                        NAIK K
+                    BATAS_SELAMA
+                    KEMBALIKAN NILAI
+                BATAS_BILA
+                NAIK K
+            BATAS_SELAMA
+        BATAS_BILA
+    BATAS_SELAMA
+    
+    KEMBALIKAN NILAI
+BATAS_FUNGSI

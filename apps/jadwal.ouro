@@ -1,0 +1,11 @@
+CETAK_TEKS "╔══════════════════════════════════════╗"
+CETAK_TEKS "║        JADWAL HARIAN                 ║"
+CETAK_TEKS "╠══════════════════════════════════════╣"
+CETAK_TEKS "║ 05:00 - Bangun Tidur                 ║"
+CETAK_TEKS "║ 07:00 - Olahraga                     ║"
+CETAK_TEKS "║ 08:00 - Kerja                        ║"
+CETAK_TEKS "║ 12:00 - Makan Siang                  ║"
+CETAK_TEKS "║ 17:00 - Istirahat                    ║"
+CETAK_TEKS "║ 22:00 - Tidur                        ║"
+CETAK_TEKS "╚══════════════════════════════════════╝"
+BATAS_PROGRAM

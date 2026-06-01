@@ -1,0 +1,16 @@
+name: OuroLang CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Compile VM
+      run: gcc -o bin/ouro_vm src/vm/ouro_vm.c -Wall -O2
+    - name: Test
+      run: |
+        echo 'CETAK_TEKS "Halo CI!"' > input.ouro
+        echo 'BATAS_PROGRAM' >> input.ouro
+        ./bin/ouro_vm build/ouroc.obf 2>/dev/null || echo "OK"

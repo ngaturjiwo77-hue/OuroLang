@@ -1,0 +1,15 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== KERNEL OURO v1.0 ==="
+    CETAK_TEKS "Ouro Native Kernel"
+    CETAK_TEKS ""
+    CETAK_TEKS "Fungsi:"
+    CETAK_TEKS "  kernel_mulai()    - Inisialisasi"
+    CETAK_TEKS "  kernel_baca()     - Baca bytecode"
+    CETAK_TEKS "  kernel_eksekusi() - Jalankan opcode"
+    CETAK_TEKS "  kernel_selesai()  - Exit"
+    CETAK_TEKS ""
+    CETAK_TEKS "Syscall Linux ARM64:"
+    CETAK_TEKS "  write = 64, exit = 93"
+    CETAK_TEKS ""
+    CETAK_TEKS "[OK] Kernel siap"
+BATAS_PROGRAM

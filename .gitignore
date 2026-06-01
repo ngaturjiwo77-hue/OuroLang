@@ -1,0 +1,16 @@
+# Binary
+*.o
+*.obf
+build/*.obf
+native/kernel_ouro
+native/program_ouro
+bin/ouro_vm
+bin/ouroc
+
+# Sementara
+input.ouro
+output.obf
+a.out
+
+# Sistem
+.DS_Store

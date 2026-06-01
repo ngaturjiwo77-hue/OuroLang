@@ -1,0 +1,14 @@
+# === INTI MESIN OUROLANG (PURE OURO) ===
+# Definisi Syscall untuk Linux/Unix (x86_64)
+# 1 = sys_write, 60 = sys_exit
+
+GLOBAL SYSCALL_WRITE 1
+GLOBAL SYSCALL_EXIT 60
+GLOBAL STD_OUT 1
+
+FUNGSI_PARAM TULIS_OUTPUT TEKS_POINTER PANJANG
+    # Ini adalah simulasi mekanisme pengiriman instruksi
+    # ke prosesor menggunakan register.
+    # Di masa depan, ini akan memicu 'INT 0x80' atau 'SYSCALL'
+    PANGGIL_PARAM EXEC_SYSCALL SYSCALL_WRITE STD_OUT TEKS_POINTER PANJANG
+BATAS_FUNGSI

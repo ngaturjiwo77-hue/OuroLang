@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== EMAIL (SMTP) ==="
+    CETAK_TEKS "send, receive, attachment"
+    CETAK_TEKS "========================"
+BATAS_PROGRAM

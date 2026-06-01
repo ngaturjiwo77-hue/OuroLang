@@ -1,0 +1,8 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "OUROC v13 - Full Math"
+    CETAK_TEKS "====================="
+    CETAK_TEKS "Keyword: TAMBAH, KURANG, KALI, BAGI"
+    CETAK_TEKS "         TAMBAH_VAR, KURANG_VAR"
+    CETAK_TEKS "         KALI_VAR, BAGI_VAR"
+    CETAK_TEKS "====================="
+BATAS_PROGRAM

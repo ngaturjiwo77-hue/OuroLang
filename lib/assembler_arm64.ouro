@@ -1,0 +1,12 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== ASSEMBLER ARM64 v1.0 ==="
+    CETAK_TEKS "Assembly -> Machine Code"
+    CETAK_TEKS ""
+    CETAK_TEKS "Encoding:"
+    CETAK_TEKS "  mov x0, #1    -> 0xD2800020"
+    CETAK_TEKS "  mov x8, #64   -> 0xD2800808"
+    CETAK_TEKS "  svc #0        -> 0xD4000001"
+    CETAK_TEKS "  ret           -> 0xD65F03C0"
+    CETAK_TEKS ""
+    CETAK_TEKS "[OK] Assembler siap"
+BATAS_PROGRAM

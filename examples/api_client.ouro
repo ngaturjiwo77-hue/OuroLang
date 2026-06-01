@@ -1,0 +1,31 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/http.ouro"
+    BAWAKAN "lib/json.ouro"
+    
+    CETAK_TEKS "╔══════════════════════════════════════╗\n"
+    CETAK_TEKS "║     OUROLANG API CLIENT             ║\n"
+    CETAK_TEKS "╚══════════════════════════════════════╝\n\n"
+    
+    CETAK_TEKS "[1] GET /api/data\n"
+    PANGGIL_KEMBALI HASIL HTTP_MINTA "http://localhost:8080/api/data"
+    CETAK_TEKS "Response: "
+    CETAK_TEKS HASIL
+    CETAK_TEKS "\n\n"
+    
+    CETAK_TEKS "[2] POST /api/users\n"
+    PANGGIL JSON_BUAT_OBJEK BODY
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI BODY "nama" "Ouro"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI BODY "versi" "3.0"
+    PANGGIL_KEMBALI HASIL2 HTTP_POST "http://localhost:8080/api/users" BODY
+    CETAK_TEKS "Response: "
+    CETAK_TEKS HASIL2
+    CETAK_TEKS "\n\n"
+    
+    CETAK_TEKS "[3] GET /api/status\n"
+    PANGGIL_KEMBALI KODE HTTP_KODE_STATUS "http://localhost:8080/api/status"
+    CETAK_TEKS "Status Code: "
+    CETAK_ANGKA KODE
+    CETAK_TEKS "\n\n"
+    
+    CETAK_TEKS "[API Client] Selesai.\n"
+BATAS_PROGRAM

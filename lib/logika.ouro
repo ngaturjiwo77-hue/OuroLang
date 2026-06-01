@@ -1,0 +1,14 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== LOGIKA OURO ==="
+    CETAK_TEKS ""
+    CETAK_TEKS "DAN: A && B"
+    CETAK_TEKS "ATAU: A || B"
+    CETAK_TEKS "BUKAN: !A"
+    CETAK_TEKS "XOR: A ^ B"
+    CETAK_TEKS ""
+    CETAK_TEKS "Truth Table DAN:"
+    CETAK_TEKS "0 DAN 0 = 0"
+    CETAK_TEKS "0 DAN 1 = 0"
+    CETAK_TEKS "1 DAN 0 = 0"
+    CETAK_TEKS "1 DAN 1 = 1"
+BATAS_PROGRAM

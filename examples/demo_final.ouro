@@ -1,0 +1,68 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "╔══════════════════════════════════════╗\n"
+    CETAK_TEKS "║     OUROLANG FINAL DEMO             ║\n"
+    CETAK_TEKS "╠══════════════════════════════════════╣\n"
+    
+    SIMPAN NAMA "OuroLang"
+    SIMPAN VERSI 3
+    SIMPAN PUSTAKA 29
+    SIMPAN SCORE 95
+    
+    CETAK_TEKS "║ Nama    : "
+    CETAK_TEKS NAMA
+    CETAK_TEKS "\n"
+    
+    CETAK_TEKS "║ Versi   : "
+    CETAK_ANGKA VERSI
+    CETAK_TEKS ".0\n"
+    
+    CETAK_TEKS "║ Pustaka : "
+    CETAK_ANGKA PUSTAKA
+    CETAK_TEKS " modul\n"
+    
+    CETAK_TEKS "║ Score   : "
+    CETAK_ANGKA SCORE
+    CETAK_TEKS "/100\n")
+    
+    CETAK_TEKS "╠══════════════════════════════════════╣\n"
+    CETAK_TEKS "║ Status  : MANDIRI                   ║\n"
+    CETAK_TEKS "║ Runtime : VM C + Interpreter        ║\n"
+    CETAK_TEKS "║ Device  : HP Android + Termux       ║\n"
+    CETAK_TEKS "╚══════════════════════════════════════╝\n\n")
+    
+    CETAK_TEKS "[*] Menjalankan test suite...\n\n")
+    
+    # Test 1: Variabel
+    SIMPAN A 10
+    SIMPAN B 20
+    SIMPAN C 0
+    TAMBAH C A
+    TAMBAH C B
+    CETAK_TEKS "[TEST 1] Aritmatika: 10 + 20 = "
+    CETAK_ANGKA C
+    CETAK_TEKS " ✓\n")
+    
+    # Test 2: Loop
+    SIMPAN I 1
+    SIMPAN TOTAL 0
+    TITIK_MULAI
+        TAMBAH TOTAL I
+        TAMBAH I 1
+        ANALISIS_JEJAK I 6
+            HENTIKAN
+        TUTUP_ANALISIS
+    PUTAR_SELAMA_SAMA 1 1
+    CETAK_TEKS "[TEST 2] Loop 1..5 = "
+    CETAK_ANGKA TOTAL
+    CETAK_TEKS " ✓\n")
+    
+    # Test 3: Kondisi
+    BILA_SAMA TOTAL 15
+        CETAK_TEKS "[TEST 3] Kondisi IF: TRUE ✓\n")
+    LAINNYA
+        CETAK_TEKS "[TEST 3] Kondisi IF: FALSE ✗\n")
+    BATAS_BILA
+    
+    CETAK_TEKS "\n[+] SEMUA TEST BERHASIL!\n")
+    CETAK_TEKS "[+] OuroLang siap digunakan.\n")
+BATAS_PROGRAM

@@ -1,0 +1,13 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "OUROC Dinamis"
+    SIMPAN I 0
+    SELAMA
+        CETAK_TEKS "Loop "
+        TAMBAH I 1
+        SAMA_DENGAN I 3
+        JIKA
+            HENTIKAN
+        BATAS_JIKA
+    BATAS_SELAMA
+    CETAK_TEKS "Selesai"
+BATAS_PROGRAM

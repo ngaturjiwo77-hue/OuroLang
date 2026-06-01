@@ -1,0 +1,24 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "========================================\n"
+    CETAK_TEKS "||  OUROLANG V5.0 - TABEL SIMBOL      ||\n"
+    CETAK_TEKS "========================================\n"
+    
+    # Semua variabel ini berawalan huruf 'K', dulu ini akan hancur lebur!
+    SIMPAN KORDINAT_X 100
+    SIMPAN KORDINAT_Y 200
+    SIMPAN KORDINAT_Z 300
+
+    CETAK_TEKS "[*] Kordinat X berhasil ditahan: "
+    CETAK_ANGKA KORDINAT_X
+    CETAK_TEKS "\n"
+    
+    CETAK_TEKS "[*] Kordinat Y berhasil ditahan: "
+    CETAK_ANGKA KORDINAT_Y
+    CETAK_TEKS "\n"
+    
+    CETAK_TEKS "[*] Kordinat Z berhasil ditahan: "
+    CETAK_ANGKA KORDINAT_Z
+    CETAK_TEKS "\n"
+
+    CETAK_TEKS "\n[+] HANTU MEMORI TELAH DIMUSNAHKAN!\n"
+BATAS_PROGRAM

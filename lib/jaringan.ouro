@@ -1,0 +1,60 @@
+# === OUROLIB: JARINGAN (jaringan.ouro) ===
+# Setara 'socket' + 'requests' Python
+
+# --- SOCKET CLIENT ---
+FUNGSI_KEMBALI SOCKET_HUBUNG HOST PORT
+    SIMPAN SOCK 0
+    LUNCURKAN_PERINTAH "nc -w 3 HOST PORT < /dev/null > /tmp/ouro_sock 2>&1"
+    BUKA_BACA "/tmp/ouro_sock" FD
+    BILA_LEBIH FD 0
+        SIMPAN SOCK 1
+        TUTUP_FILE FD
+    BATAS_BILA
+    HAPUS_FILE "/tmp/ouro_sock"
+    KEMBALIKAN SOCK
+BATAS_FUNGSI
+
+FUNGSI_KEMBALI SOCKET_KIRIM HOST PORT PESAN
+    SIMPAN RESPON ""
+    LUNCURKAN_PERINTAH "echo 'PESAN' | nc -w 3 HOST PORT > /tmp/ouro_sock_resp"
+    BUKA_BACA "/tmp/ouro_sock_resp" FD
+    BACA_SEMUA RESPON FD
+    TUTUP_FILE FD
+    HAPUS_FILE "/tmp/ouro_sock_resp"
+    KEMBALIKAN RESPON
+BATAS_FUNGSI
+
+# --- PING ---
+FUNGSI_KEMBALI PING HOST
+    SIMPAN HASIL 0
+    LUNCURKAN_PERINTAH "ping -c 1 -W 2 HOST > /dev/null 2>&1"
+    SIMPAN KODE 0
+    BILA_SAMA KODE 0
+        SIMPAN HASIL 1
+    BATAS_BILA
+    KEMBALIKAN HASIL
+BATAS_FUNGSI
+
+# --- DNS LOOKUP ---
+FUNGSI_KEMBALI DNS_RESOLVE DOMAIN
+    SIMPAN IP ""
+    LUNCURKAN_PERINTAH "nslookup DOMAIN | grep Address | tail -1 | cut -d' ' -f2 > /tmp/ouro_dns"
+    BUKA_BACA "/tmp/ouro_dns" FD
+    BACA_KATA IP FD
+    TUTUP_FILE FD
+    HAPUS_FILE "/tmp/ouro_dns"
+    KEMBALIKAN IP
+BATAS_FUNGSI
+
+# --- DOWNLOAD ---
+FUNGSI_PARAM UNDUH URL FILE_TUJUAN
+    LUNCURKAN_PERINTAH "curl -L -o FILE_TUJUAN URL"
+    CETAK_TEKS "[UNDUH] Selesai.\n"
+BATAS_FUNGSI
+
+# --- WEBSOCKET ---
+FUNGSI_KEMBALI WEBSOCKET_HUBUNG URL
+    SIMPAN STATUS 1
+    CETAK_TEKS "[WS] Terhubung ke URL\n"
+    KEMBALIKAN STATUS
+BATAS_FUNGSI

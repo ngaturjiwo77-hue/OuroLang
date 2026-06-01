@@ -1,0 +1,11 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "========================================\n"
+    CETAK_TEKS "||   PROGRAM OURO MANDIRI           ||\n"
+    CETAK_TEKS "========================================\n"
+    CETAK_TEKS "\n"
+    CETAK_TEKS "[*] Compiler Ouro berhasil!\n"
+    CETAK_TEKS "[*] Semua file .ouro bisa dikompilasi.\n"
+    CETAK_TEKS "[*] Output ini dari bytecode murni.\n"
+    CETAK_TEKS "\n"
+    CETAK_TEKS "========================================\n"
+BATAS_PROGRAM

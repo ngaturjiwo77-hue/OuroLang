@@ -1,0 +1,27 @@
+# === PUSTAKA STANDAR: ANTARMUKA (std.ouro) ===
+
+FUNGSI GARIS_TEBAL
+    CETAK_TEKS "==================================================\n"
+BATAS_FUNGSI
+
+FUNGSI GARIS_TIPIS
+    CETAK_TEKS "--------------------------------------------------\n"
+BATAS_FUNGSI
+
+FUNGSI HEADER_SISTEM
+    PANGGIL GARIS_TEBAL
+    CETAK_TEKS "      OUROLANG KERNEL - SISTEM BEROPERASI       \n"
+    PANGGIL GARIS_TEBAL
+BATAS_FUNGSI
+
+FUNGSI PESAN_SUKSES
+    CETAK_TEKS "[OK] Operasi berhasil diselesaikan dengan aman.\n"
+BATAS_FUNGSI
+
+FUNGSI PESAN_GAGAL
+    CETAK_TEKS "[ERR] Kegagalan sistem! Tindakan digugurkan.\n"
+BATAS_FUNGSI
+
+FUNGSI INFO_MULAI
+    CETAK_TEKS "[SISTEM] Memulai inisialisasi mesin...\n"
+BATAS_FUNGSI

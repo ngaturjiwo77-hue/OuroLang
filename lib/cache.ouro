@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== CACHE SYSTEM ==="
+    CETAK_TEKS "LRU, TTL, Memory Cache"
+    CETAK_TEKS "====================="
+BATAS_PROGRAM

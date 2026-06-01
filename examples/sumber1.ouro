@@ -1,0 +1,4 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "Halo dari Ouro Mandiri!\n"
+    CETAK_TEKS "Ini hasil kompilasi compiler Ouro sendiri.\n"
+BATAS_PROGRAM

@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== TEST FRAMEWORK ==="
+    CETAK_TEKS "assert, suite, mock"
+    CETAK_TEKS "====================="
+BATAS_PROGRAM

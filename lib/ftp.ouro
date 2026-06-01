@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== FTP CLIENT ==="
+    CETAK_TEKS "upload, download, list"
+    CETAK_TEKS "======================"
+BATAS_PROGRAM

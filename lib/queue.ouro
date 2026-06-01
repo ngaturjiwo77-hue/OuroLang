@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== QUEUE SYSTEM ==="
+    CETAK_TEKS "FIFO, LIFO, Priority"
+    CETAK_TEKS "====================="
+BATAS_PROGRAM

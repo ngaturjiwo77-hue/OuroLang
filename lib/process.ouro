@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== PROCESS MANAGER ==="
+    CETAK_TEKS "fork, exec, kill, wait"
+    CETAK_TEKS "======================="
+BATAS_PROGRAM

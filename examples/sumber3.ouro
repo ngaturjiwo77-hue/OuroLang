@@ -1,0 +1,7 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "1. Ouro Mandiri\n"
+    CETAK_TEKS "2. Self-Hosted\n"
+    CETAK_TEKS "3. Turing-Complete\n"
+    CETAK_TEKS "4. Cross-Platform\n"
+    CETAK_TEKS "5. Dibuat dari HP Android\n"
+BATAS_PROGRAM

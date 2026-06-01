@@ -1,0 +1,31 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "========================================\n"
+    CETAK_TEKS "||    OUROLANG LEXICAL ANALYZER       ||\n"
+    CETAK_TEKS "========================================\n"
+    
+    CETAK_TEKS "[*] Membuka file target.txt...\n"
+    BUKA_MATA "target.txt"
+
+    SIMPAN STATUS_BACA 1
+
+    TITIK_MULAI
+        # Membaca satu kata dan menaruhnya di variabel KATA_SAAT_INI
+        BACA_KATA KATA_SAAT_INI
+        
+        CETAK_TEKS "[>] Kata terdeteksi: "
+        CETAK_KATA KATA_SAAT_INI
+        CETAK_TEKS "\n"
+
+        # Otak Kompilator: Menganalisis kata yang masuk
+        ANALISIS_KATA KATA_SAAT_INI "SIMPAN"
+            CETAK_TEKS "    [!] ALERT: Instruksi SIMPAN terdeteksi! Mengalokasikan memori...\n"
+        TUTUP_ANALISIS
+        
+        ANALISIS_KATA KATA_SAAT_INI "EOF"
+            CETAK_TEKS "[*] Akhir dokumen tercapai. Menghentikan bacaan.\n"
+            SIMPAN STATUS_BACA 0
+        TUTUP_ANALISIS
+
+    PUTAR_SELAMA_SAMA STATUS_BACA 1
+    
+BATAS_PROGRAM

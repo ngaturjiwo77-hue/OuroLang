@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== DOCUMENTATION GENERATOR ==="
+    CETAK_TEKS "markdown, html, pdf"
+    CETAK_TEKS "=============================="
+BATAS_PROGRAM

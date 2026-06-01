@@ -1,0 +1,25 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/io.ouro"
+    
+    CETAK_TEKS "VM OURO SEJATI v1.0"
+    CETAK_TEKS "==================="
+    CETAK_TEKS "[INIT] Buka bytecode..."
+    BUKA_FILE "test_bytecode.obf"
+    CETAK_TEKS "[BACA] Membaca opcode..."
+    BACA_FILE
+    CETAK_TEKS "[EXEC] Eksekusi..."
+    
+    SIMPAN OP 61
+    CETAK_TEKS "  OP 61: "
+    CETAK_TEKS "Halo dari VM Ouro Sejati!"
+    
+    SIMPAN X 100
+    TAMBAH X 50
+    CETAK_TEKS "  Hasil: "
+    CETAK_ANGKA X
+    
+    CETAK_TEKS "[DONE]"
+    TUTUP_FILE
+BATAS_PROGRAM

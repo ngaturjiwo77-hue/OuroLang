@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "OURO RUNTIME v2.0"
+echo "=================="
+echo "Interpreter: Ouro murni (bytecode)"
+echo "Runtime: VM C"
+echo ""
+./bin/ouro_vm build/ouro_interp_v2.obf

@@ -1,0 +1,6 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "OUROI - Interpreter Ouro"
+    CETAK_TEKS "========================"
+    CETAK_TEKS "Jalankan .ouro langsung"
+    CETAK_TEKS "80+ Opcode didukung"
+BATAS_PROGRAM

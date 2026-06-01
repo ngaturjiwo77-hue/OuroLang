@@ -1,0 +1,12 @@
+PROGRAM_UTAMA
+    SIMPAN I 0
+    CETAK_TEKS "Mulai Menghitung:\n"
+    
+    SELAMA_SAMA I 0
+        CETAK_ANGKA I
+        CETAK_TEKS "\n"
+        NAIK I
+    BATAS_SELAMA
+    
+    CETAK_TEKS "Selesai!\n"
+BATAS_PROGRAM

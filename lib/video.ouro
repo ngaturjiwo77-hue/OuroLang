@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== VIDEO PLAYER ==="
+    CETAK_TEKS "play, pause, seek"
+    CETAK_TEKS "=================="
+BATAS_PROGRAM

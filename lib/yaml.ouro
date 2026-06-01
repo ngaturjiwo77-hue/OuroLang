@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== YAML PARSER ==="
+    CETAK_TEKS "parse, dump, validate"
+    CETAK_TEKS "======================"
+BATAS_PROGRAM

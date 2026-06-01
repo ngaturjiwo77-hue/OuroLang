@@ -1,0 +1,17 @@
+# === OUROLIB: MODUL INPUT/OUTPUT (modul_io.ouro) ===
+
+# Mencetak satu huruf/karakter langsung ke terminal berdasarkan kode ASCII
+FUNGSI_PARAM CETAK_KARAKTER HURUF
+    # 1 adalah kode akses ke Standard Output (Layar Terminal)
+    TULIS_KARAKTER 1 HURUF
+BATAS_FUNGSI
+
+# Mencetak spasi berulang kali untuk merapikan tampilan (Indentasi)
+FUNGSI_PARAM CETAK_SPASI JUMLAH
+    SIMPAN I 0
+    SELAMA_KURANG I JUMLAH
+        # 32 adalah Kode ASCII untuk karakter Spasi
+        TULIS_KARAKTER 1 32  
+        NAIK I
+    BATAS_SELAMA
+BATAS_FUNGSI

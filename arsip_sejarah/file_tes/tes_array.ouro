@@ -1,0 +1,11 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/array.ouro"
+    
+    ARRAY_TAMBAH 500
+    ARRAY_TAMBAH 750
+    
+    BACA_ARRAY HASIL_AKHIR ARRAY_DATA 1
+    CETAK_TEKS "Isi indeks ke-1 adalah: "
+    CETAK_ANGKA HASIL_AKHIR
+    CETAK_TEKS "\n"
+BATAS_PROGRAM

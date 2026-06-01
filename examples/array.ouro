@@ -1,0 +1,43 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "========================================\n"
+    CETAK_TEKS "||   OUROLANG NATIVE ARRAY ENGINE     ||\n"
+    CETAK_TEKS "========================================\n"
+    
+    # INDEKS UNIK (I, J, K)
+    SIMPAN I 0
+    SIMPAN J 1
+    SIMPAN K 2
+
+    # DATA UNIK (A, B, C)
+    SIMPAN A 777
+    SIMPAN B 888
+    SIMPAN C 999
+
+    # MENYUNTIKKAN DATA
+    CETAK_TEKS "[*] Mengisi blok memori dinamis (Array)...\n"
+    TULIS_ARRAY I A
+    TULIS_ARRAY J B
+    TULIS_ARRAY K C
+
+    # TARGET HASIL (X, Y, Z)
+    SIMPAN X 0
+    SIMPAN Y 0
+    SIMPAN Z 0
+
+    BACA_ARRAY X I
+    BACA_ARRAY Y J
+    BACA_ARRAY Z K
+
+    CETAK_TEKS "[+] Isi Array [0] adalah : "
+    CETAK_ANGKA X
+    CETAK_TEKS "\n"
+
+    CETAK_TEKS "[+] Isi Array [1] adalah : "
+    CETAK_ANGKA Y
+    CETAK_TEKS "\n"
+
+    CETAK_TEKS "[+] Isi Array [2] adalah : "
+    CETAK_ANGKA Z
+    CETAK_TEKS "\n"
+
+BATAS_PROGRAM

@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== JWT TOKEN ==="
+    CETAK_TEKS "encode, decode, verify"
+    CETAK_TEKS "======================"
+BATAS_PROGRAM

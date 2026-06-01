@@ -1,0 +1,5 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== XML PARSER ==="
+    CETAK_TEKS "parse, build, validate"
+    CETAK_TEKS "======================"
+BATAS_PROGRAM

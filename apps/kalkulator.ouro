@@ -1,0 +1,8 @@
+CETAK_TEKS "╔══════════════════════════════════════╗"
+CETAK_TEKS "║        KALKULATOR OURO               ║"
+CETAK_TEKS "╠══════════════════════════════════════╣"
+CETAK_TEKS "║ 10 + 20 = 30                         ║"
+CETAK_TEKS "║ 50 - 15 = 35                         ║"
+CETAK_TEKS "║ 8 x 7 = 56                           ║"
+CETAK_TEKS "╚══════════════════════════════════════╝"
+BATAS_PROGRAM

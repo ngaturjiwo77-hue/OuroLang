@@ -1,0 +1,7 @@
+#!/bin/bash
+case "${1:-help}" in
+    compile) shift; ./ouroc "$@" ;;
+    run) shift; ./ouroi "$@" ;;
+    vm) shift; ./bin/ouro_vm "$@" ;;
+    *) echo "OURO RUNTIME: ./ouro compile|run|vm <file>" ;;
+esac

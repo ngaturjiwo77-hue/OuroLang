@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "╔══════════════════════════════════════╗"
+    CETAK_TEKS "║   OUROLANG - MANDIRI                ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ Compiler: Ouro                      ║"
+    CETAK_TEKS "║ VM: C                               ║"
+    CETAK_TEKS "║ Status: BERHASIL                    ║"
+    CETAK_TEKS "╚══════════════════════════════════════╝"
+BATAS_PROGRAM

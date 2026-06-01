@@ -1,0 +1,43 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/tensor.ouro"
+    BAWAKAN "lib/neural.ouro"
+    BAWAKAN "lib/pikiran.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/math.ouro"
+    
+    PANGGIL KOTAK_ATAS 40
+    PANGGIL_PARAM KOTAK_TENGAH "AI PREDICTOR OURO" 40
+    PANGGIL KOTAK_BAWAH 40
+    
+    CETAK_TEKS "\n[*] Inisialisasi Neural Network...\n"
+    CETAK_TEKS "[*] Input: 2 neuron\n"
+    CETAK_TEKS "[*] Output: 1 neuron\n"
+    CETAK_TEKS "[*] Aktivasi: ReLU\n\n"
+    
+    # Buat layer
+    PANGGIL_PARAM DENSE_LAYER 2 1
+    
+    # Data training
+    CETAK_TEKS "--- Training ---\n"
+    CETAK_TEKS "Data: [1,2] -> 3\n"
+    CETAK_TEKS "Data: [2,3] -> 5\n")
+    CETAK_TEKS "Data: [3,4] -> 7\n\n")
+    
+    # Simulasi training
+    SIMPAN INPUT1 1
+    SIMPAN INPUT2 2
+    PANGGIL_KEMBALI HASIL1 FORWARD INPUT1
+    CETAK_TEKS "[TRAIN] Prediksi [1,2]: "
+    CETAK_ANGKA HASIL1
+    CETAK_TEKS " (target: 3)\n")
+    
+    # Prediksi
+    CETAK_TEKS "\n--- Prediksi ---\n"
+    CETAK_TEKS "Input [5,6]: ")
+    SIMPAN INPUT3 5
+    PANGGIL_KEMBALI HASIL3 FORWARD INPUT3
+    CETAK_ANGKA HASIL3
+    CETAK_TEKS " (expected: ~11)\n\n")
+    
+    PANGGIL_PARAM CETAK_HIJAU "[OK] AI Prediksi berhasil!\n"
+BATAS_PROGRAM

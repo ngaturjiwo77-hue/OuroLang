@@ -1,0 +1,63 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "OURO VM v2.0 - Baca & Eksekusi Bytecode"
+    CETAK_TEKS "=========================================="
+    CETAK_TEKS "Membuka bytecode..."
+    
+    BUKA_MATA "build/test_vm.obf"
+    
+    CETAK_TEKS "Header 17 byte (skip)..."
+    SIMPAN I 0
+    TITIK_MULAI
+        BACA_KARAKTER KAR
+        NAIK I
+        ANALISIS_JEJAK I 17
+            HENTIKAN
+        TUTUP_ANALISIS
+    PUTAR_SELAMA_SAMA 1 1
+    
+    CETAK_TEKS "Eksekusi opcode:"
+    
+    TITIK_MULAI
+        BACA_KARAKTER KAR
+        
+        BILA_SAMA KAR -1
+            CETAK_TEKS "EOF - Selesai"
+            HENTIKAN
+        BATAS_BILA
+        
+        BILA_SAMA KAR 21
+            CETAK_TEKS "  OP 21 (CETAK_TEKS): "
+            TITIK_MULAI
+                BACA_KARAKTER KAR
+                BILA_SAMA KAR 0
+                    HENTIKAN
+                BATAS_BILA
+                BILA_SAMA KAR -1
+                    HENTIKAN
+                BATAS_BILA
+                CETAK_KATA KAR
+            PUTAR_SELAMA_SAMA 1 1
+            CETAK_TEKS ""
+            LANJUTKAN
+        BATAS_BILA
+        
+        BILA_SAMA KAR 60
+            CETAK_TEKS "  OP 60 (BATAS_PROGRAM) - Stop"
+            HENTIKAN
+        BATAS_BILA
+        
+        BILA_SAMA KAR 255
+            CETAK_TEKS "  OP 255 (EOF) - End"
+            HENTIKAN
+        BATAS_BILA
+        
+        CETAK_TEKS "  OP "
+        CETAK_ANGKA KAR
+        CETAK_TEKS " (unknown)"
+        
+    PUTAR_SELAMA_SAMA 1 1
+    
+    TUTUP_MATA
+    CETAK_TEKS "=========================================="
+    CETAK_TEKS "VM Ouro selesai."
+BATAS_PROGRAM

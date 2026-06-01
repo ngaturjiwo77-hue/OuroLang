@@ -1,0 +1,51 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/http.ouro"
+    BAWAKAN "lib/json.ouro"
+    BAWAKAN "lib/database.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/os.ouro"
+    
+    CETAK_TEKS "╔══════════════════════════════════════╗\n"
+    CETAK_TEKS "║     OUROLANG API SERVER v1.0        ║\n"
+    CETAK_TEKS "╠══════════════════════════════════════╣\n"
+    CETAK_TEKS "║ Port    : 8080                       ║\n"
+    CETAK_TEKS "║ Routes  : GET /, POST /data          ║\n"
+    CETAK_TEKS "║ Status  : Running...                 ║\n"
+    CETAK_TEKS "╚══════════════════════════════════════╝\n"
+    
+    SIMPAN STATUS 1
+    SIMPAN COUNTER 0
+    
+    TITIK_MULAI
+        CETAK_TEKS "\n[REQUEST #"
+        TAMBAH COUNTER 1
+        CETAK_ANGKA COUNTER
+        CETAK_TEKS "]\n"
+        
+        CETAK_TEKS "├─ Method : GET\n"
+        CETAK_TEKS "├─ Path   : /api/data\n"
+        CETAK_TEKS "├─ Status : 200 OK\n"
+        
+        PANGGIL JSON_BUAT_OBJEK RESPON
+        SIMPAN RESPON "{}"
+        
+        PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON "status" "success"
+        PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON "message" "API Ouro berjalan"
+        PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON "version" "3.0"
+        PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON "request_count" COUNTER
+        
+        CETAK_TEKS "├─ Response JSON:\n"
+        CETAK_TEKS "│  "
+        CETAK_TEKS RESPON
+        CETAK_TEKS "\n"
+        
+        CETAK_TEKS "└─ Selesai\n"
+        
+        ANALISIS_JEJAK COUNTER 5
+            CETAK_TEKS "\n[API] Server demonstration complete.\n"
+            HENTIKAN
+        TUTUP_ANALISIS
+    PUTAR_SELAMA_SAMA STATUS 1
+    
+    CETAK_TEKS "\n[API] Server stopped.\n"
+BATAS_PROGRAM

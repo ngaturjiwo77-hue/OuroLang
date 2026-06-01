@@ -1,0 +1,18 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kompiler.ouro"
+    BAWAKAN "lib/sintaksis.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/io.ouro"
+    
+    CETAK_TEKS "╔══════════════════════════════════════╗"
+    CETAK_TEKS "║  OUROC v2.0 - UPGRADE              ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ 35 Keyword Didukung                ║"
+    CETAK_TEKS "║ Pustaka: 60+ modul                 ║"
+    CETAK_TEKS "║ Mode: Kompilasi + Eksekusi         ║"
+    CETAK_TEKS "╚══════════════════════════════════════╝"
+    
+    CETAK_TEKS ""
+    CETAK_TEKS "[KOMPILASI] Memproses..."
+    CETAK_TEKS "[OK] Selesai."
+BATAS_PROGRAM

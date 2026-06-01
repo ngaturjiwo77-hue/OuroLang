@@ -1,0 +1,22 @@
+# === OUROLIB: MODUL MATEMATIKA (modul_math.ouro) ===
+
+# Mengembalikan nilai positif dari angka berapapun
+FUNGSI_KEMBALI HITUNG_MUTLAK ANGKA
+    BILA_KURANG ANGKA 0
+        KALI ANGKA -1
+    BATAS_BILA
+    KEMBALIKAN ANGKA
+BATAS_FUNGSI
+
+# Menghitung bilangan berpangkat (contoh: 2 pangkat 3 = 8)
+FUNGSI_KEMBALI HITUNG_PANGKAT DASAR EKSPONEN
+    SIMPAN HASIL 1
+    SIMPAN I 0
+    
+    SELAMA_KURANG I EKSPONEN
+        KALI HASIL DASAR
+        NAIK I
+    BATAS_SELAMA
+    
+    KEMBALIKAN HASIL
+BATAS_FUNGSI

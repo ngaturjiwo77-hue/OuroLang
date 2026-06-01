@@ -1,0 +1,15 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== STRUKTUR DATA OURO ==="
+    CETAK_TEKS ""
+    CETAK_TEKS "STACK: Push, Pop, Peek"
+    CETAK_TEKS "QUEUE: Enqueue, Dequeue"
+    CETAK_TEKS "TREE: Insert, Search, Traverse"
+    CETAK_TEKS "GRAPH: BFS, DFS"
+    CETAK_TEKS "HASH_TABLE: Put, Get"
+    CETAK_TEKS ""
+    CETAK_TEKS "Stack demo:"
+    SIMPAN STACK_TOP 0
+    TAMBAH STACK_TOP 10
+    CETAK_TEKS "Push 10 -> Top = "
+    CETAK_ANGKA STACK_TOP
+BATAS_PROGRAM

@@ -1,0 +1,43 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "========================================\n"
+    CETAK_TEKS "||      OUROLANG ARSENAL GENERATOR    ||\n"
+    CETAK_TEKS "========================================\n"
+    
+    CETAK_TEKS "[?] Masukkan Jumlah Baris Senjata (Angka): "
+    INTEROGASI_MEMORI JUMLAH_BARIS
+    
+    CETAK_TEKS "[*] Membuka Pabrik... Membuat file 'log_operasi.txt'\n"
+    SIAPKAN_BERKAS "log_operasi.txt"
+    SUNTIK_TEKS "=== LAPORAN PERSENJAATAAN OUROLANG ===\n"
+
+    SIMPAN COUNTER 1
+    SIMPAN STATUS_LOOP 1
+
+    # --- PROSES GENERATOR OTOMATIS ---
+    TITIK_MULAI
+        CETAK_TEKS "[+] Menyuntikkan amunisi ke-"
+        CETAK_ANGKA COUNTER
+        CETAK_TEKS " ke dalam file...\n"
+
+        SUNTIK_TEKS "Amunisi Taktis Nomor: "
+        SUNTIK_ANGKA COUNTER
+        SUNTIK_TEKS "\n"
+
+        TAMBAH COUNTER 1
+        
+        # Variabel TARGET_BATAS agar tidak berbenturan dengan COUNTER
+        SIMPAN_SILANG TARGET_BATAS JUMLAH_BARIS
+        TAMBAH TARGET_BATAS 1
+        
+        ANALISIS_JEJAK COUNTER TARGET_BATAS
+            SIMPAN STATUS_LOOP 0
+        TUTUP_ANALISIS
+
+    PUTAR_SELAMA_SAMA STATUS_LOOP 1
+    # ---------------------------------
+
+    CETAK_TEKS "\n[+] Berkas log_operasi.txt Berhasil Dibuat!\n"
+    CETAK_TEKS "[*] Memeriksa isi berkas di sistem:\n"
+    LUNCURKAN_PERINTAH "cat log_operasi.txt"
+    
+BATAS_PROGRAM

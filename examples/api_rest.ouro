@@ -1,0 +1,79 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/http.ouro"
+    BAWAKAN "lib/json.ouro"
+    BAWAKAN "lib/database.ouro"
+    BAWAKAN "lib/kripto.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    
+    PANGGIL KOTAK_ATAS 40
+    PANGGIL_PARAM KOTAK_TENGAH "OUROLANG REST API v1.0" 40
+    PANGGIL KOTAK_BAWAH 40
+    
+    CETAK_TEKS "\n[*] Inisialisasi database...\n"
+    
+    PANGGIL_PARAM DB_SIMPAN "users" "[]"
+    PANGGIL_PARAM DB_SIMPAN "token" "abc123"
+    PANGGIL_PARAM DB_SIMPAN "version" "3.0"
+    
+    CETAK_TEKS "[*] Database siap.\n"
+    CETAK_TEKS "[*] Token: abc123\n\n")
+    
+    # --- ROUTE: GET /api/users ---
+    CETAK_HIJAU "[GET] /api/users\n"
+    CETAK_TEKS "  Headers: Authorization: Bearer abc123\n"
+    
+    PANGGIL_KEMBALI TOKEN DB_AMBIL "token"
+    PANGGIL_KEMBALI TOKEN_VALID APAKAH_SAMA TOKEN "abc123"
+    
+    BILA_SAMA TOKEN_VALID 1
+        PANGGIL JSON_BUAT_OBJEK RESPON
+        PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON "status" "success"
+        PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON "data" "[{\"id\":1,\"name\":\"Ouro\"}]"
+        PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON "count" "1"
+        
+        CETAK_TEKS "  Status: 200 OK\n"
+        CETAK_TEKS "  Response: "
+        CETAK_TEKS RESPON
+        CETAK_TEKS "\n"
+    LAINNYA
+        CETAK_MERAH "  Status: 401 Unauthorized\n")
+    BATAS_BILA
+    
+    CETAK_TEKS "\n"
+    
+    # --- ROUTE: POST /api/users ---
+    CETAK_HIJAU "[POST] /api/users\n"
+    CETAK_TEKS "  Body: {\"name\":\"NewUser\"}\n")
+    
+    PANGGIL JSON_BUAT_OBJEK BODY
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI BODY "name" "NewUser"
+    PANGGIL_KEMBALI NAMA JSON_DAPATKAN BODY "name"
+    
+    PANGGIL JSON_BUAT_OBJEK RESPON2
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON2 "status" "created"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON2 "id" "2"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI RESPON2 "name" NAMA
+    
+    CETAK_TEKS "  Status: 201 Created\n"
+    CETAK_TEKS "  Response: "
+    CETAK_TEKS RESPON2
+    CETAK_TEKS "\n\n"
+    
+    # --- ROUTE: GET /api/stats ---
+    CETAK_HIJAU "[GET] /api/stats\n"
+    
+    PANGGIL JSON_BUAT_OBJEK STATS
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI STATS "uptime" "99.9%"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI STATS "requests" "1250"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI STATS "memory" "84KB"
+    PANGGIL_PARAM JSON_TAMBAH_KUNCI STATS "pustaka" "20"
+    
+    CETAK_TEKS "  Status: 200 OK\n"
+    CETAK_TEKS "  Response: "
+    CETAK_TEKS STATS
+    CETAK_TEKS "\n\n"
+    
+    PANGGIL KOTAK_ATAS 40
+    PANGGIL_PARAM KOTAK_TENGAH "API Server Demo Selesai" 40
+    PANGGIL KOTAK_BAWAH 40
+BATAS_PROGRAM

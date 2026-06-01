@@ -1,0 +1,18 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "====================================\n"
+    CETAK_TEKS "|| PROTOKOL PEMINDAIAN KEAMANAN   ||\n"
+    CETAK_TEKS "====================================\n"
+    
+    CETAK_TEKS "[*] Menetapkan status target (1 = Terbuka, 0 = Tertutup)...\n"
+    SIMPAN STATUS_PORT 1
+    
+    CETAK_TEKS "[*] Memulai Analisis Jejak...\n"
+    
+    # Blok ini hanya akan dieksekusi JIKA STATUS_PORT bernilai 1
+    ANALISIS_JEJAK STATUS_PORT 1
+        CETAK_TEKS "\n[!] PERINGATAN KRITIS: PORT TERBUKA TERDETEKSI!\n"
+        CETAK_TEKS "[!] Mengeksekusi penutupan paksa jalur akses...\n"
+    TUTUP_ANALISIS
+
+    CETAK_TEKS "\n[+] Pemindaian selesai. Sistem aman.\n"
+BATAS_PROGRAM

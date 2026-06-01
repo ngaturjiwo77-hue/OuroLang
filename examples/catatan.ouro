@@ -1,0 +1,5 @@
+BUKA_FILE "log_sistem.txt" HANDLE_LOG
+TULIS_FILE HANDLE_LOG "Log Aktif: Komandan sedang menjalankan sistem.\n"
+TUTUP_FILE HANDLE_LOG
+
+CETAK_TEKS "Log berhasil ditulis ke log_sistem.txt\n"

@@ -1,0 +1,12 @@
+PROGRAM_UTAMA
+    SIMPAN SKOR 100
+    
+    BILA_SAMA SKOR 100
+        CETAK_TEKS "Selamat! Anda mendapat skor sempurna!\n"
+    BATAS_BILA
+    
+    BILA_SAMA SKOR 50
+        CETAK_TEKS "Skor Anda hanya 50.\n"
+    BATAS_BILA
+    
+BATAS_PROGRAM

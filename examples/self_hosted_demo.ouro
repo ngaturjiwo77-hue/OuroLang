@@ -1,0 +1,25 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "========================================\n"
+    CETAK_TEKS "|| SELFT-HOSTED OURO COMPILER DEMO   ||\n"
+    CETAK_TEKS "========================================\n"
+    
+    CETAK_TEKS "[*] Membaca source program...\n"
+    CETAK_TEKS "[*] Tokenisasi...\n"
+    
+    SIMPAN JUMLAH_TOKEN 5
+    SIMPAN COUNTER 1
+    
+    TITIK_MULAI
+        CETAK_TEKS "  -> Token "
+        CETAK_ANGKA COUNTER
+        CETAK_TEKS " : CETAK_TEKS\n"
+        TAMBAH COUNTER 1
+        
+        ANALISIS_JEJAK COUNTER 6
+            SIMPAN STATUS_LOOP 0
+        TUTUP_ANALISIS
+    PUTAR_SELAMA_SAMA STATUS_LOOP 1
+    
+    CETAK_TEKS "\n[+] Bytecode dihasilkan!\n"
+    CETAK_TEKS "[*] Jalankan: ./bin/ouro_vm build/program.obf\n"
+BATAS_PROGRAM

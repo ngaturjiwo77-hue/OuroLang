@@ -1,0 +1,16 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "=== OURO ASSEMBLY v1.0 ==="
+    CETAK_TEKS "Bytecode .obf -> ARM64 Assembly"
+    CETAK_TEKS ""
+    CETAK_TEKS "OPCODE -> ARM64:"
+    CETAK_TEKS "  61 (CETAK_TEKS) -> mov x0, #1; ldr x1, =str; mov x2, len; mov x8, #64; svc #0"
+    CETAK_TEKS "  10 (SIMPAN)     -> str wN, [sp, #offset]"
+    CETAK_TEKS "  11 (TAMBAH)     -> ldr wN, [sp, #off]; add wN, wN, #val; str wN, [sp, #off]"
+    CETAK_TEKS "  30 (SAMA_DENGAN)-> ldr wA; ldr wB; cmp wA, wB; cset wC, eq"
+    CETAK_TEKS "  40 (JIKA)       -> cbnz wC, label"
+    CETAK_TEKS "  44 (SELAMA)     -> label:"
+    CETAK_TEKS "  45 (BATAS_SELAMA)-> b label"
+    CETAK_TEKS "  2  (BATAS_PROGRAM)-> mov x0, #0; mov x8, #93; svc #0"
+    CETAK_TEKS ""
+    CETAK_TEKS "[OK] Assembly mapping siap"
+BATAS_PROGRAM

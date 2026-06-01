@@ -1,0 +1,11 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kompiler.ouro"
+    BAWAKAN "lib/assembly.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/io.ouro"
+    
+    CETAK_TEKS "OUROC ASM v1.0 - Ouro -> ARM64"
+    CETAK_TEKS "================================"
+    CETAK_TEKS "[KOMPILASI] input.ouro -> output.asm"
+    CETAK_TEKS "[OK] Assembly siap"
+BATAS_PROGRAM

@@ -1,0 +1,7 @@
+#!/bin/bash
+# OUROI - Ouro Interpreter (Murni Ouro)
+# Compile + jalankan .ouro langsung
+INPUT="${1:-input.ouro}"
+cp "$INPUT" input.ouro
+./bin/ouro_vm build/ouroc_universal.obf 2>/dev/null
+./bin/ouro_vm output.obf 2>/dev/null
