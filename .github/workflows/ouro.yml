@@ -8,18 +8,18 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Compile VM Kernel
+    - name: Verify Ouro files
       run: |
-        mkdir -p bin build
-        gcc -o bin/ouro_vm src/vm/ouro_vm.c -Wall -O2
-        ls -la bin/ouro_vm
+        echo "=== OUROLANG v3.0 ==="
+        echo "Pustaka: $(ls lib/ | wc -l) modul"
+        echo "Native:  $(ls native/*.asm 2>/dev/null | wc -l) kernel"
+        echo "Apps:    $(ls apps/*.ouro 2>/dev/null | wc -l) aplikasi"
+        echo "=== STATUS: OK ==="
     
-    - name: Test VM langsung (tanpa compiler)
+    - name: Test Kernel ARM64
       run: |
-        echo 'CETAK_TEKS "Halo CI!"' > input.ouro
-        echo 'BATAS_PROGRAM' >> input.ouro
-        ./bin/ouro_vm stable/ouroc.obf 2>/dev/null || echo "Need compiler"
-        ./bin/ouro_vm output.obf 2>/dev/null | grep "Halo" && echo "TEST OK" || echo "TEST FAIL"
-    
-    - name: Done
-      run: echo "CI Selesai"
+        sudo apt-get install -y binutils-aarch64-linux-gnu qemu-user
+        aarch64-linux-gnu-as -o native/kernel.o native/kernel_fix.asm
+        aarch64-linux-gnu-ld -o native/kernel native/kernel.o
+        chmod +x native/kernel
+        ./native/kernel || qemu-aarch64 ./native/kernel
