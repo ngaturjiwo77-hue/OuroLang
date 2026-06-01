@@ -1,0 +1,21 @@
+PROGRAM_UTAMA
+    SIMPAN I 3
+    CETAK_TEKS "Loop Test: "
+    CETAK_TEKS "\n"
+    
+    SIMPAN LOOP_ACTIVE 1
+    
+    SELAMA
+        CETAK_TEKS "Loop "
+        CETAK_ANGKA I
+        CETAK_TEKS "\n"
+        KURANG I 1
+        SAMA_DENGAN I 0
+        JIKA
+            CETAK_TEKS "Loop selesai\n"
+            HENTIKAN
+        BATAS_JIKA
+    BATAS_SELAMA
+    
+    CETAK_TEKS "Done!\n"
+BATAS_PROGRAM
