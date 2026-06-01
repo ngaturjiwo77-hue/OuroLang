@@ -59,10 +59,10 @@ int main(int ac,char **av){
             case OP_SELAMA:{long pos=ftell(f);if(ld<64)ls[ld++]=pos;break;}
             case OP_BATAS_SELAMA:{if(ld>0)fseek(f,ls[--ld],SEEK_SET);break;}
             case OP_HENTIKAN:{if(ld>0){ld--;int d=1;while(d>0){int o=bb(f);if(o==OP_SELAMA)d++;if(o==OP_BATAS_SELAMA)d--;}}break;}
-            case OP_BAWAKAN:{char fn[256];bs(f,fn,sizeof(fn));FILE *fh=fopen(fn,"r");if(fh){char buf[8192];int i=0;while(i<8191){int c=fgetc(fh);if(c==EOF)break;b[i++]=c;}b[i]=0;printf("%s",buf);fclose(fh);}break;}
+            case OP_BAWAKAN: { break; }
             case OP_BUKA_BACA:{char fn[256];bs(f,fn,sizeof(fn));FILE *fh=fopen(fn,"r");if(fh&&fc<4){fl[fc]=fh;sv("FD",fc++);}else sv("FD",-1);break;}
             case OP_TUTUP_FILE:{int s=bv("FD");if(s>=0&&s<fc&&fl[s]){fclose(fl[s]);fl[s]=NULL;}break;}
-            case OP_BACA_FILE:{int s=bv("FD");if(s>=0&&s<fc&&fl[s]){rewind(fl[s]);char buf[8192]="";int i=0;while(i<8191){int c=fgetc(fl[s]);if(c==EOF)break;b[i++]=c;}b[i]=0;printf("%s",buf);}break;}
+            case OP_BACA_FILE:{int s=bv("FD");if(s>=0&&s<fc&&fl[s]){rewind(fl[s]);char buf[8192]="";int i=0;while(i<8191){int c=fgetc(fl[s]);if(c==EOF)break;buf[i++]=c;}buf[i]=0;printf("%s",buf);}break;}
             case OP_BUKA_TULIS:{char fn[256];bs(f,fn,sizeof(fn));FILE *fh=fopen(fn,"w");if(fh&&fc<4){fl[fc]=fh;sv("FD",fc++);}else sv("FD",-1);break;}
             case OP_TULIS_BYTE:{int32_t v=bi(f);int s=bv("FD");if(s>=0&&s<fc&&fl[s])fputc(v&0xFF,fl[s]);break;}
             case OP_BATAS_PROGRAM: case OP_KELUAR: h=0; break;
