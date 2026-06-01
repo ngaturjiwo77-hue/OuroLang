@@ -1,0 +1,22 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kompiler.ouro"
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/math.ouro"
+    BAWAKAN "lib/sys.ouro"
+    
+    CETAK_TEKS "=== PROGRAM LOOP OURO ==="
+    CETAK_TEKS "Powered by lib/kompiler.ouro"
+    CETAK_TEKS "Powered by lib/vm.ouro"
+    CETAK_TEKS ""
+    
+    CETAK_TEKS "[LOOP] Mundur 3 ke 1:"
+    SIMPAN I 3
+    CETAK_ANGKA I
+    KURANG I 1
+    CETAK_ANGKA I
+    KURANG I 1
+    CETAK_ANGKA I
+    
+    CETAK_TEKS ""
+    CETAK_TEKS "[OK] Program selesai"
+BATAS_PROGRAM

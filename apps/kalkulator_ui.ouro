@@ -1,0 +1,21 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/math.ouro"
+    
+    CETAK_TEKS "╔══════════════════════════════════════╗"
+    CETAK_TEKS "║     KALKULATOR OURO v2.0            ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ OPERASI:                            ║"
+    CETAK_TEKS "║ 10 + 5 = 15                         ║"
+    CETAK_TEKS "║ 20 - 7 = 13                         ║"
+    CETAK_TEKS "║ 6 x 8 = 48                          ║"
+    CETAK_TEKS "║ 100 / 4 = 25                        ║"
+    CETAK_TEKS "║ 17 % 5 = 2                          ║"
+    CETAK_TEKS "║ 2 ^ 8 = 256                         ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ [1] Tambah  [2] Kurang             ║"
+    CETAK_TEKS "║ [3] Kali    [4] Bagi               ║"
+    CETAK_TEKS "║ [5] Modulus [6] Pangkat            ║"
+    CETAK_TEKS "║ [0] Keluar                          ║"
+    CETAK_TEKS "╚══════════════════════════════════════╝"
+BATAS_PROGRAM

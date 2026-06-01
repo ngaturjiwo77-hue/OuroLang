@@ -1,0 +1,28 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/math.ouro"
+    BAWAKAN "lib/error.ouro"
+    BAWAKAN "lib/debug.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   VM OURO v4.0 - Virtual Machine    |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Opcode: 40+ | Stack: 64 level      |"
+    CETAK_TEKS "| Mode: Execute Bytecode              |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "[INIT] VM v4.0 siap"
+    CETAK_TEKS "[LOAD] Membaca bytecode..."
+    CETAK_TEKS "[EXEC] Eksekusi program..."
+    CETAK_TEKS ""
+    
+    SIMPAN X 100
+    TAMBAH X 50
+    CETAK_TEKS "  Hasil: "
+    CETAK_ANGKA X
+    CETAK_TEKS ""
+    
+    CETAK_TEKS "[DONE] Eksekusi selesai"
+BATAS_PROGRAM

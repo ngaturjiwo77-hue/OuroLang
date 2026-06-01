@@ -1,0 +1,18 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kompiler.ouro"
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/math.ouro"
+    BAWAKAN "lib/string.ouro"
+    
+    CETAK_TEKS "╔══════════════════════════════════════╗"
+    CETAK_TEKS "║  OUROC v3.0 - Ouro Mandiri         ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ 40+ Keyword | 63+ Pustaka           ║"
+    CETAK_TEKS "║ Compiler: Ouro | VM: Ouro           ║"
+    CETAK_TEKS "╚══════════════════════════════════════╝"
+    
+    CETAK_TEKS ""
+    CETAK_TEKS "[KOMPILASI] input.ouro -> output.obf"
+    CETAK_TEKS "[OK] Selesai"
+BATAS_PROGRAM

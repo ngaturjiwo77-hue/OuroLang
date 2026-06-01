@@ -1,5 +1,11 @@
 PROGRAM_UTAMA
-    CETAK_TEKS "=== DEBUGGER ==="
-    CETAK_TEKS "breakpoint, watch, trace"
-    CETAK_TEKS "========================="
+    CETAK_TEKS "=== DEBUG.OURO ==="
+    CETAK_TEKS "Debug System"
+    CETAK_TEKS ""
+    CETAK_TEKS "FITUR:"
+    CETAK_TEKS "  DEBUG_CETAK_VAR(nama) - Cetak isi variabel"
+    CETAK_TEKS "  DEBUG_CETAK_SEMUA()   - Cetak semua variabel"
+    CETAK_TEKS "  DEBUG_TRACE()          - Tampilkan jejak"
+    CETAK_TEKS "  DEBUG_BREAKPOINT()     - Berhenti di sini"
+    CETAK_TEKS "  DEBUG_STEP()           - Jalan per langkah"
 BATAS_PROGRAM

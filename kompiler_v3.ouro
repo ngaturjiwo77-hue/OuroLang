@@ -1,0 +1,11 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kompiler.ouro"
+    BAWAKAN "lib/sintaksis.ouro"
+    BAWAKAN "lib/sys.ouro"
+    
+    CETAK_TEKS "OUROC v3.0 - Ouro Compiler"
+    CETAK_TEKS "=========================="
+    CETAK_TEKS "Fitur: LOOP, JIKA, HENTIKAN"
+    CETAK_TEKS "[KOMPILASI] input.ouro -> output.obf"
+    CETAK_TEKS "[OK] Selesai"
+BATAS_PROGRAM

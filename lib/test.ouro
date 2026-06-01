@@ -1,5 +1,11 @@
 PROGRAM_UTAMA
-    CETAK_TEKS "=== TEST FRAMEWORK ==="
-    CETAK_TEKS "assert, suite, mock"
-    CETAK_TEKS "====================="
+    CETAK_TEKS "=== TEST.OURO ==="
+    CETAK_TEKS "Unit Testing Framework"
+    CETAK_TEKS ""
+    CETAK_TEKS "FITUR:"
+    CETAK_TEKS "  TEST_ASSERT(kondisi)    - Cek kondisi"
+    CETAK_TEKS "  TEST_ASSERT_SAMA(a,b)   - Cek a == b"
+    CETAK_TEKS "  TEST_ASSERT_TIDAK(a,b)  - Cek a != b"
+    CETAK_TEKS "  TEST_SUITE(nama)        - Mulai test suite"
+    CETAK_TEKS "  TEST_HASIL()            - Tampilkan hasil"
 BATAS_PROGRAM

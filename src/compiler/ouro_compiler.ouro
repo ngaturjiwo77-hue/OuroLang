@@ -1,132 +1,22 @@
 PROGRAM_UTAMA
-    CETAK_TEKS "╔══════════════════════════════════════╗\n"
-    CETAK_TEKS "║     OURO COMPILER v1.0              ║\n"
-    CETAK_TEKS "║     Self-Hosted True Compiler       ║\n"
-    CETAK_TEKS "╠══════════════════════════════════════╣\n"
-    CETAK_TEKS "║ Sumber : input.ouro                 ║\n"
-    CETAK_TEKS "║ Output : output.obf                 ║\n"
-    CETAK_TEKS "╚══════════════════════════════════════╝\n\n"
+    BAWAKAN "lib/kompiler.ouro"
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/io.ouro"
+    BAWAKAN "lib/string.ouro"
+    BAWAKAN "lib/math.ouro"
+    BAWAKAN "lib/error.ouro"
     
-    BUKA_MATA "input.ouro"
-    SIAPKAN_BERKAS "output.obf"
-    
-    SIMPAN POS 17
-    SIMPAN STATUS_BACA 1
-    
-    # Header 17 byte
-    SIMPAN I 0
-    TITIK_MULAI
-        SUNTIK_BYTE 0
-        NAIK I
-        ANALISIS_JEJAK I 17
-            HENTIKAN
-        TUTUP_ANALISIS
-    PUTAR_SELAMA_SAMA 1 1
-    
-    TITIK_MULAI
-        BACA_KARAKTER KAR
-        
-        BILA_SAMA KAR -1
-            HENTIKAN
-        BATAS_BILA
-        
-        BILA_SAMA KAR 32
-            LANJUTKAN
-        BATAS_BILA
-        BILA_SAMA KAR 10
-            LANJUTKAN
-        BATAS_BILA
-        BILA_SAMA KAR 13
-            LANJUTKAN
-        BATAS_BILA
-        
-        STRING_MULAI
-        
-        TITIK_MULAI
-            STRING_TAMBAH KAR
-            BACA_KARAKTER KAR
-            BILA_SAMA KAR -1
-                HENTIKAN
-            BATAS_BILA
-            BILA_SAMA KAR 32
-                HENTIKAN
-            BATAS_BILA
-            BILA_SAMA KAR 10
-                HENTIKAN
-            BATAS_BILA
-        PUTAR_SELAMA_SAMA 1 1
-        
-        STRING_BANDING "CETAK_TEKS"
-        BILA_SAMA CMP_RESULT 1
-            SUNTIK_BYTE 21
-            TAMBAH POS 1
-            CETAK_TEKS "  [COMPILE] CETAK_TEKS -> OP 21\n"
-            
-            BACA_KARAKTER KAR
-            TITIK_MULAI
-                BILA_SAMA KAR 32
-                    BACA_KARAKTER KAR
-                    LANJUTKAN
-                BATAS_BILA
-                HENTIKAN
-            BATAS_SELAMA
-            
-            STRING_MULAI
-            BILA_SAMA KAR 34
-                BACA_KARAKTER KAR
-                TITIK_MULAI
-                    BILA_SAMA KAR 34
-                        HENTIKAN
-                    BATAS_BILA
-                    STRING_TAMBAH KAR
-                    BACA_KARAKTER KAR
-                PUTAR_SELAMA_SAMA 1 1
-            LAINNYA
-                TITIK_MULAI
-                    BILA_SAMA KAR 32
-                        HENTIKAN
-                    BATAS_BILA
-                    BILA_SAMA KAR 10
-                        HENTIKAN
-                    BATAS_BILA
-                    STRING_TAMBAH KAR
-                    BACA_KARAKTER KAR
-                PUTAR_SELAMA_SAMA 1 1
-            BATAS_BILA
-            
-            STRING_TULIS_BUFFER
-            CETAK_TEKS "  [STRING] Tersalin ke output\n"
-            LANJUTKAN
-        BATAS_BILA
-        
-        STRING_BANDING "BATAS_PROGRAM"
-        BILA_SAMA CMP_RESULT 1
-            SUNTIK_BYTE 60
-            TAMBAH POS 1
-            CETAK_TEKS "  [COMPILE] BATAS_PROGRAM -> OP 60\n"
-            LANJUTKAN
-        BATAS_BILA
-        
-        STRING_BANDING "PROGRAM_UTAMA"
-        BILA_SAMA CMP_RESULT 1
-            CETAK_TEKS "  [SKIP] PROGRAM_UTAMA\n"
-            LANJUTKAN
-        BATAS_BILA
-        
-    PUTAR_SELAMA_SAMA STATUS_BACA 1
-    
-    SUNTIK_BYTE 255
-    TAMBAH POS 1
-    
-    TUTUP_BERKAS
-    TUTUP_MATA
-    
-    CETAK_TEKS "\n╔══════════════════════════════════════╗\n"
-    CETAK_TEKS "║  KOMPILASI SELESAI                 ║\n"
-    CETAK_TEKS "╠══════════════════════════════════════╣\n"
-    CETAK_TEKS "║ Bytecode : "
-    CETAK_ANGKA POS
-    CETAK_TEKS " bytes                 ║\n"
-    CETAK_TEKS "║ Output   : output.obf              ║\n"
-    CETAK_TEKS "╚══════════════════════════════════════╝\n"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   OUROC v4.0 - Ouro Compiler        |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Keyword: 40+ | Pustaka: 65+         |"
+    CETAK_TEKS "| Input: .ouro | Output: .obf         |"
+    CETAK_TEKS "| Mode: Compile + Verify              |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "[KOMPILASI] Memproses input.ouro..."
+    CETAK_TEKS "[VERIFY]  Memeriksa sintaks..."
+    CETAK_TEKS "[EMIT]    Menulis bytecode..."
+    CETAK_TEKS "[OK]      Kompilasi selesai"
 BATAS_PROGRAM

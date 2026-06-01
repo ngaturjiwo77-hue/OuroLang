@@ -1,0 +1,26 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kompiler.ouro"
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/sintaksis.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/math.ouro"
+    
+    CETAK_TEKS "OUROC LOOP v1.0"
+    CETAK_TEKS "================"
+    CETAK_TEKS "Fitur: SELAMA, JIKA, HENTIKAN"
+    CETAK_TEKS ""
+    
+    CETAK_TEKS "[DEMO] Loop 3 kali:"
+    SIMPAN I 0
+    SELAMA
+        CETAK_TEKS "  Loop "
+        CETAK_ANGKA I
+        TAMBAH I 1
+        SAMA_DENGAN I 3
+        JIKA
+            HENTIKAN
+        BATAS_JIKA
+    BATAS_SELAMA
+    
+    CETAK_TEKS "[OK] Loop selesai"
+BATAS_PROGRAM

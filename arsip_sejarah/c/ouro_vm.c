@@ -53,7 +53,7 @@ int main(int ac,char **av){
             case OP_KURANG:{char n[64];bs(f,n,sizeof(n));int32_t v=bi(f);sv(n,bv(n)-v);break;}
             case OP_KALI:{char n[64];bs(f,n,sizeof(n));int32_t v=bi(f);sv(n,bv(n)*v);break;}
             case OP_BAGI:{char n[64];bs(f,n,sizeof(n));int32_t v=bi(f);if(v)sv(n,bv(n)/v);break;}
-            case OP_SAMA_DENGAN:{char a[64],b[64];bs(f,a,sizeof(a));bs(f,b,sizeof(b));cmp=(bv(a)==bv(b))?1:0;break;}
+            case OP_SAMA_DENGAN:{char a[64],b[64];bs(f,a,sizeof(a));bs(f,b,sizeof(b));int va=bv(a);int vb=(b[0]>="0"&&b[0]<="9")?atoi(b):bv(b);cmp=(va==vb)?1:0;break;}
             case OP_JIKA:{int32_t t=bi(f);if(!cmp)fseek(f,t,SEEK_SET);break;}
             case OP_LAINNYA:{int32_t t=bi(f);if(cmp)fseek(f,t,SEEK_SET);break;}
             case OP_SELAMA:{long pos=ftell(f);if(ld<64)ls[ld++]=pos;break;}
