@@ -8,21 +8,18 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
+    - name: Install GCC
+      run: sudo apt-get install -y gcc
+    
     - name: Compile VM Kernel
       run: |
         mkdir -p bin
-        gcc -o bin/ouro_vm src/vm/ouro_vm.c -Wall -O2 2>&1 || echo "VM compile warning"
-    
-    - name: Verify files
-      run: |
-        echo "=== FILES ==="
+        gcc -o bin/ouro_vm src/vm/ouro_vm.c -Wall -O2
         ls -la bin/ouro_vm
-        ls -la build/ouroc.obf 2>/dev/null || echo "No compiler yet"
-        echo "=== DONE ==="
     
     - name: Test CETAK_TEKS
       run: |
-        echo 'CETAK_TEKS "Halo dari CI!"' > input.ouro
+        echo 'CETAK_TEKS "Halo CI!"' > input.ouro
         echo 'BATAS_PROGRAM' >> input.ouro
-        ./bin/ouro_vm build/ouroc.obf 2>/dev/null
-        ./bin/ouro_vm output.obf 2>/dev/null | grep "Halo" && echo "TEST OK" || echo "TEST FAIL"
+        ./bin/ouro_vm build/ouroc.obf 2>/dev/null || true
+        ./bin/ouro_vm output.obf 2>/dev/null | grep "Halo" && echo "TEST OK"
