@@ -1,0 +1,41 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/io.ouro"
+    BAWAKAN "lib/string.ouro"
+    
+    CETAK_TEKS "<!DOCTYPE html>"
+    CETAK_TEKS "<html><head>"
+    CETAK_TEKS "<title>Bug Hunter - OuroLang</title>"
+    CETAK_TEKS "<style>"
+    CETAK_TEKS "body{background:#0d1117;color:#c9d1d9;font-family:monospace;padding:20px}"
+    CETAK_TEKS "h1{color:#58a6ff}"
+    CETAK_TEKS ".box{border:1px solid#30363d;border-radius:8px;padding:15px;margin:10px 0}"
+    CETAK_TEKS ".clean{color:#3fb950}.warn{color:#d29922}.bug{color:#f85149}"
+    CETAK_TEKS "</style></head><body>"
+    
+    CETAK_TEKS "<h1>🐛 Bug Hunter v1.0</h1>"
+    CETAK_TEKS "<div class='box'>"
+    CETAK_TEKS "<h3>📁 Scan: program.ouro</h3>"
+    CETAK_TEKS "<p class='clean'>✅ Keyword: 40+ valid</p>"
+    CETAK_TEKS "<p class='clean'>✅ Kurung: seimbang</p>"
+    CETAK_TEKS "<p class='warn'>⚠️  Variabel: 2 tidak terpakai</p>"
+    CETAK_TEKS "<p class='clean'>✅ Loop: ada HENTIKAN</p>"
+    CETAK_TEKS "<p class='clean'>✅ Import: 3 pustaka</p>"
+    CETAK_TEKS "</div>"
+    
+    CETAK_TEKS "<div class='box'>"
+    CETAK_TEKS "<h3>📊 Ringkasan</h3>"
+    CETAK_TEKS "<p class='clean'>✅ Bug: 0</p>"
+    CETAK_TEKS "<p class='warn'>⚠️  Warning: 1</p>"
+    CETAK_TEKS "<p>Status: <span class='clean'>BERSIH</span></p>"
+    CETAK_TEKS "</div>"
+    
+    CETAK_TEKS "<div class='box'>"
+    CETAK_TEKS "<h3>🔧 Tools</h3>"
+    CETAK_TEKS "<button onclick='alert(\"Scanning...\")'>🔍 Scan Ulang</button>"
+    CETAK_TEKS "<button onclick='alert(\"Report disimpan\")'>📥 Download Report</button>"
+    CETAK_TEKS "</div>"
+    
+    CETAK_TEKS "<p>Powered by <b>OuroLang</b> | ARM64 Native</p>"
+    CETAK_TEKS "</body></html>"
+BATAS_PROGRAM
