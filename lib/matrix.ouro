@@ -1,0 +1,14 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   MATRIX v1.0 - Ouro                |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Add, Sub, Mul, Transpose            |"
+    CETAK_TEKS "| Determinant, Inverse                |"
+    CETAK_TEKS "| Eigenvalue                          |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "CONTOH:"
+    CETAK_TEKS "  A = [[1,2],[3,4]]"
+    CETAK_TEKS "  B = [[5,6],[7,8]]"
+    CETAK_TEKS "  A x B = [[19,22],[43,50]]"
+BATAS_PROGRAM

@@ -1,0 +1,14 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   HTTP CLIENT v1.0 - Ouro           |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| GET, POST, PUT, DELETE              |"
+    CETAK_TEKS "| Header, Body, Status Code           |"
+    CETAK_TEKS "| Timeout, Retry, Redirect            |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "CONTOH:"
+    CETAK_TEKS "  HTTP_GET https://api.example.com"
+    CETAK_TEKS "  -> Status: 200 OK"
+    CETAK_TEKS "  -> Body: {data: ...}"
+BATAS_PROGRAM

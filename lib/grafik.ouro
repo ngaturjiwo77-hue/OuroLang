@@ -1,0 +1,14 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   GRAFIK v1.0 - Ouro                |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Bar, Line, Pie, Scatter             |"
+    CETAK_TEKS "| SVG output                          |"
+    CETAK_TEKS "| Warna kustom                        |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "CONTOH BAR CHART:"
+    CETAK_TEKS "  Data: [10,25,15,30,20]"
+    CETAK_TEKS "  Label: [A,B,C,D,E]"
+    CETAK_TEKS "  -> SVG bar chart"
+BATAS_PROGRAM

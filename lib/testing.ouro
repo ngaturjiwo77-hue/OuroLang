@@ -1,0 +1,15 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   TESTING v1.0 - Ouro               |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| assert(condition)                   |"
+    CETAK_TEKS "| assert_sama(a,b)                    |"
+    CETAK_TEKS "| suite(nama)                         |"
+    CETAK_TEKS "| report()                            |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "CONTOH:"
+    CETAK_TEKS "  TEST_SUITE 'Math'"
+    CETAK_TEKS "  ASSERT_SAMA 1+1 2"
+    CETAK_TEKS "  -> PASS: Math"
+BATAS_PROGRAM

@@ -1,0 +1,14 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   WEB SERVER v1.0 - Ouro            |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Route: GET, POST                    |"
+    CETAK_TEKS "| Template: HTML, JSON                |"
+    CETAK_TEKS "| Port: 8080                          |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "ROUTE:"
+    CETAK_TEKS "  /          -> index.html"
+    CETAK_TEKS "  /api/data  -> JSON response"
+    CETAK_TEKS "  /scan      -> Bug Hunter"
+BATAS_PROGRAM
