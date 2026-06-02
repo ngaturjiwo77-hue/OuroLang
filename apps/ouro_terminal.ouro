@@ -1,0 +1,47 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kernel.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/math.ouro"
+
+    CETAK_TEKS "╔══════════════════════════════════════╗"
+    CETAK_TEKS "║     OURO TERMINAL v1.0              ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ Aplikasi Ouro yang benar-benar jalan║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ 1. Kalkulator                       ║"
+    CETAK_TEKS "║ 2. Info Sistem                      ║"
+    CETAK_TEKS "║ 3. Tes Math                         ║"
+    CETAK_TEKS "║ 0. Keluar                           ║"
+    CETAK_TEKS "╚══════════════════════════════════════╝"
+    CETAK_TEKS ""
+
+    CETAK_TEKS "[1] KALKULATOR"
+    SIMPAN A 100
+    SIMPAN B 50
+    SIMPAN C 0
+    TAMBAH C A
+    TAMBAH C B
+    CETAK_TEKS "100 + 50 = "
+    CETAK_ANGKA C
+    CETAK_TEKS ""
+
+    CETAK_TEKS "[2] INFO SISTEM"
+    CETAK_TEKS "OuroLang v1.0"
+    CETAK_TEKS "85 Pustaka"
+    CETAK_TEKS "ARM64 Native"
+    CETAK_TEKS "Self-Hosted"
+    CETAK_TEKS ""
+
+    CETAK_TEKS "[3] TES MATH"
+    SIMPAN X 10
+    KALI X 5
+    CETAK_TEKS "10 x 5 = "
+    CETAK_ANGKA X
+    SIMPAN Y 100
+    BAGI Y 4
+    CETAK_TEKS " | 100 / 4 = "
+    CETAK_ANGKA Y
+    CETAK_TEKS ""
+
+    CETAK_TEKS "[OK] Semua berhasil!"
+BATAS_PROGRAM
