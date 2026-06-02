@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| MASUKAN v2.0 - Input Interaktif     |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| BACA var       - Baca angka         |"
+    CETAK_TEKS "| BACA_TEKS var  - Baca string        |"
+    CETAK_TEKS "| BACA_BARIS var - Baca 1 baris       |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

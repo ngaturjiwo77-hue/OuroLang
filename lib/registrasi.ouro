@@ -1,0 +1,11 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| REGISTRASI v1.0 - Ouro              |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| DAFTAR_FUNGSI[256]                  |"
+    CETAK_TEKS "| JUMLAH_FUNGSI = 0                   |"
+    CETAK_TEKS "|                                     |"
+    CETAK_TEKS "| DAFTAR_TAMBAH(nama,alamat)          |"
+    CETAK_TEKS "| DAFTAR_CARI(nama) -> alamat         |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

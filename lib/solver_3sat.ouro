@@ -1,0 +1,20 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/idlbs.ouro"
+    BAWAKAN "lib/vra.ouro"
+    BAWAKAN "lib/logika_id.ouro"
+    BAWAKAN "lib/math.ouro"
+    BAWAKAN "lib/larik.ouro"
+    BAWAKAN "lib/acak.ouro"
+
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| SOLVER 3-SAT v1.0 - Ouro            |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Algoritma: DPLL + ID-LBS + VRA     |"
+    CETAK_TEKS "| Backtracking berbasis Resonansi    |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| FUNGSI:                             |"
+    CETAK_TEKS "| SAT_DPLL(klausa) -> solusi          |"
+    CETAK_TEKS "| SAT_LBS_BACKSWEEP(target) -> literal|"
+    CETAK_TEKS "| SAT_VRA_RESONANSI(state) -> valid   |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

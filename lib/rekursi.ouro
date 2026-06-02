@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| REKURSI v1.0 - Fungsi Rekursif      |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| FUNGSI faktorial(n)                 |"
+    CETAK_TEKS "|   KALAU n <= 1: KEMBALIKAN 1        |"
+    CETAK_TEKS "|   KEMBALIKAN n * faktorial(n-1)     |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

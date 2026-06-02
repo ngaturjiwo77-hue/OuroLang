@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| NETWORK v1.0 - Ouro                 |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| HTTP_MINTA(url)     - GET request   |"
+    CETAK_TEKS "| HTTP_KIRIM(url,data) - POST request |"
+    CETAK_TEKS "| SOCKET_HUBUNG(host,port) - Connect  |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

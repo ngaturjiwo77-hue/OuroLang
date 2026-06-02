@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| DEBUGGER v1.0 - Step-by-Step        |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| DEBUG_MULAI()    - Start debug       |"
+    CETAK_TEKS "| DEBUG_LANGKAH()  - Step next         |"
+    CETAK_TEKS "| DEBUG_LIHAT(var) - Lihat variabel    |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

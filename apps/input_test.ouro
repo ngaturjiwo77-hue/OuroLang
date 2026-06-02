@@ -1,0 +1,33 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kernel.ouro"
+    BAWAKAN "lib/masukan.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/math.ouro"
+
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   TEST INPUT - KERNEL OURO          |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+
+    CETAK_TEKS "[kernel_mulai]"
+    CETAK_TEKS "Angka pertama: "
+    BACA A
+    
+    CETAK_TEKS "Angka kedua: "
+    BACA B
+
+    CETAK_TEKS "[kernel_eksekusi]"
+    SIMPAN C 0
+    TAMBAH C A
+    TAMBAH C B
+
+    CETAK_TEKS "Hasil: "
+    CETAK_ANGKA A
+    CETAK_TEKS " + "
+    CETAK_ANGKA B
+    CETAK_TEKS " = "
+    CETAK_ANGKA C
+
+    CETAK_TEKS ""
+    CETAK_TEKS "[kernel_selesai]"
+BATAS_PROGRAM

@@ -1,3 +1,0 @@
-# Struktur Data Universal untuk Kamus
-# Opcode: 1=Prog, 2=Batas, 10=Simpan, 11=Tambah, 61=CetakTeks, 62=CetakAngka, 32=BilaSama, 31=BatasBila, 77=PosisiFile, 78=GeserFile, 90=ArrayBuat, 91=ArraySimpan, 93=ArrayAmbil
-# (Kita akan memuat ini ke kompilator)

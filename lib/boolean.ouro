@@ -1,8 +1,8 @@
 PROGRAM_UTAMA
     CETAK_TEKS "+--------------------------------------+"
-    CETAK_TEKS "| KONVERSI v2.0 - Konversi Tipe       |"
+    CETAK_TEKS "| BOOLEAN v1.0 - Tipe Data Boolean    |"
     CETAK_TEKS "+--------------------------------------+"
-    CETAK_TEKS "| ANGKA_KE_TEKS(angka) -> string      |"
-    CETAK_TEKS "| TEKS_KE_ANGKA(teks) -> angka        |"
+    CETAK_TEKS "| BENAR = 1, SALAH = 0                |"
+    CETAK_TEKS "| DAN, ATAU, BUKAN                    |"
     CETAK_TEKS "+--------------------------------------+"
 BATAS_PROGRAM

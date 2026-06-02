@@ -1,0 +1,27 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kernel.ouro"
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/sys.ouro"
+    BAWAKAN "lib/math.ouro"
+    BAWAKAN "lib/error.ouro"
+    BAWAKAN "lib/string.ouro"
+    BAWAKAN "lib/float.ouro"
+    BAWAKAN "lib/masukan.ouro"
+    BAWAKAN "lib/fungsi.ouro"
+    BAWAKAN "lib/larik.ouro"
+    BAWAKAN "lib/rekursi.ouro"
+    BAWAKAN "lib/boolean.ouro"
+    BAWAKAN "lib/konversi.ouro"
+    BAWAKAN "lib/debugger.ouro"
+
+    # === VM v24.0 - SEMUA FITUR DASAR ===
+
+    CETAK_TEKS "╔══════════════════════════════════════╗"
+    CETAK_TEKS "║   VM v24.0 - SEMUA FITUR DASAR      ║"
+    CETAK_TEKS "╠══════════════════════════════════════╣"
+    CETAK_TEKS "║ ✅ error    ✅ string  ✅ float     ║"
+    CETAK_TEKS "║ ✅ masukan  ✅ fungsi  ✅ larik     ║"
+    CETAK_TEKS "║ ✅ rekursi  ✅ boolean ✅ konversi ║"
+    CETAK_TEKS "║ ✅ debugger                        ║"
+    CETAK_TEKS "╚══════════════════════════════════════╝"
+BATAS_PROGRAM

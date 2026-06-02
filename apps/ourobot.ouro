@@ -1,0 +1,23 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/deepseek.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/io.ouro"
+    
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|       OUROBOT v1.0                  |"
+    CETAK_TEKS "|   Asisten AI Bahasa Indonesia       |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Powered by DeepSeek API             |"
+    CETAK_TEKS "| Ketik 'keluar' untuk berhenti       |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "Kamu: Halo OuroBot!"
+    CETAK_TEKS "OuroBot: Halo! Aku asisten AI Ouro."
+    CETAK_TEKS "         Tanyakan apa saja tentang"
+    CETAK_TEKS "         pemrograman Ouro!"
+    CETAK_TEKS ""
+    CETAK_TEKS "Kamu: Apa itu OuroLang?"
+    CETAK_TEKS "OuroBot: OuroLang adalah bahasa"
+    CETAK_TEKS "         pemrograman Indonesia"
+    CETAK_TEKS "         yang mandiri dan native."
+BATAS_PROGRAM

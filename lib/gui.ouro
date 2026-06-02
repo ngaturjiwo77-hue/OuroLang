@@ -1,0 +1,10 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| GUI v1.0 - Ouro                     |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| JENDELA(judul,lebar,tinggi)         |"
+    CETAK_TEKS "| TOMBOL(teks,aksi)                   |"
+    CETAK_TEKS "| FORM(judul,fields)                  |"
+    CETAK_TEKS "| DIALOG(pesan)                       |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

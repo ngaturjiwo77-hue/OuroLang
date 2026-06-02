@@ -1,0 +1,13 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| DEEPSEEK API v1.0 - Ouro            |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Kirim pesan ke DeepSeek AI          |"
+    CETAK_TEKS "| Balasan masuk ke Ouro               |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+    CETAK_TEKS "FUNGSI:"
+    CETAK_TEKS "  DEEPSEEK_TANYA(pesan) -> balasan"
+    CETAK_TEKS "  DEEPSEEK_API_KUNCI(kunci)"
+    CETAK_TEKS "  DEEPSEEK_MODEL(model)"
+BATAS_PROGRAM

@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| FLOAT v1.0 - Bilangan Desimal       |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| SIMPAN_FLOAT var nilai              |"
+    CETAK_TEKS "| TAMBAH_FLOAT var nilai              |"
+    CETAK_TEKS "| CETAK_FLOAT var                     |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

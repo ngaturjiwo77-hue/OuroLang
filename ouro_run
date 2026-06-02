@@ -1,7 +1,22 @@
 #!/bin/bash
-echo "OURO RUNTIME v2.0"
-echo "=================="
-echo "Interpreter: Ouro murni (bytecode)"
-echo "Runtime: VM C"
+# ==========================================
+# OURO RUN - Compile & Execute
+# ==========================================
+
+INPUT="${1:-input.ouro}"
+
+echo "╔══════════════════════════════════════╗"
+echo "║        OURO RUNTIME                 ║"
+echo "╚══════════════════════════════════════╝"
 echo ""
-./bin/ouro_vm build/ouro_interp_v2.obf
+
+# 1. Compile (generate bytecode)
+echo "[COMPILE] $INPUT"
+./native/kernel_compiler < /dev/null 2>/dev/null
+
+# 2. Execute
+echo "[EXECUTE]"
+./native/vm_arm64
+
+echo ""
+echo "[DONE]"

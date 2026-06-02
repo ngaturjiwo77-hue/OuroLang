@@ -1,0 +1,11 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| PANGGIL v1.0 - Ouro                 |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| PANGGIL nama_fungsi                 |"
+    CETAK_TEKS "|   -> Cari di registrasi             |"
+    CETAK_TEKS "|   -> Simpan posisi saat ini          |"
+    CETAK_TEKS "|   -> Lompat ke fungsi               |"
+    CETAK_TEKS "|   -> KEMBALIKAN -> balik ke pemanggil|"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

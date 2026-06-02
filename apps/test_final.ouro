@@ -1,0 +1,60 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/kernel.ouro"
+    BAWAKAN "lib/vm.ouro"
+    BAWAKAN "lib/math.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   TEST FINAL - OURO v17.0           |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Kernel: v3.0 | VM: v17.0            |"
+    CETAK_TEKS "| Pustaka: 81  | BAWAKAN: 4           |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+
+    CETAK_TEKS "[TEST 1] CETAK_TEKS + CETAK_ANGKA"
+    SIMPAN A 10
+    SIMPAN B 20
+    SIMPAN C 0
+    TAMBAH C A
+    TAMBAH C B
+    CETAK_TEKS "10 + 20 = "
+    CETAK_ANGKA C
+    CETAK_TEKS " ✅"
+
+    CETAK_TEKS ""
+    CETAK_TEKS "[TEST 2] KURANG + KALI"
+    SIMPAN D 50
+    KURANG D 15
+    CETAK_TEKS "50 - 15 = "
+    CETAK_ANGKA D
+    SIMPAN E 6
+    KALI E 7
+    CETAK_TEKS " | 6 x 7 = "
+    CETAK_ANGKA E
+    CETAK_TEKS " ✅"
+
+    CETAK_TEKS ""
+    CETAK_TEKS "[TEST 3] BAGI"
+    SIMPAN F 100
+    BAGI F 4
+    CETAK_TEKS "100 / 4 = "
+    CETAK_ANGKA F
+    CETAK_TEKS " ✅"
+
+    CETAK_TEKS ""
+    CETAK_TEKS "[TEST 4] LOOP"
+    SIMPAN I 0
+    SELAMA_KURANG I 3
+        CETAK_TEKS "Loop "
+        CETAK_ANGKA I
+        CETAK_TEKS " "
+        TAMBAH I 1
+    BATAS_SELAMA
+    CETAK_TEKS "✅"
+
+    CETAK_TEKS ""
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| SEMUA TEST BERHASIL!                |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

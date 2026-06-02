@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| FUNGSI v2.0 - Definisi & Panggil    |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| FUNGSI nama(...) ... BATAS_FUNGSI    |"
+    CETAK_TEKS "| PANGGIL nama(...)                   |"
+    CETAK_TEKS "| KEMBALIKAN nilai                    |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

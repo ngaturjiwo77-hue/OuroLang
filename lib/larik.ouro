@@ -1,0 +1,9 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| LARIK v2.0 - Array Sejati           |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| LARIK_BARU nama ukuran              |"
+    CETAK_TEKS "| LARIK_ISI nama indeks nilai         |"
+    CETAK_TEKS "| LARIK_AMBIL nama indeks             |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

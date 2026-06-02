@@ -1,0 +1,10 @@
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| DATABASE v1.0 - Ouro                |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| DB_BUKA(nama)                       |"
+    CETAK_TEKS "| DB_TUTUP()                          |"
+    CETAK_TEKS "| DB_JALANKAN(sql)                    |"
+    CETAK_TEKS "| DB_AMBIL()                          |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

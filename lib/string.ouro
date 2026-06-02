@@ -1,49 +1,10 @@
-# === OUROLIB: MANIPULASI STRING ===
-
-FUNGSI_KEMBALI HITUNG_PANJANG TEKS
-    SIMPAN PJ 0
-    SIMPAN I 0
-    SIMPAN KR 0
-    SELAMA_SAMA 1 1
-        AMBIL_KARAKTER KR TEKS I
-        BILA_SAMA KR 0
-            HENTIKAN
-        BATAS_BILA
-        NAIK I
-        NAIK PJ
-    BATAS_SELAMA
-    KEMBALIKAN PJ
-BATAS_FUNGSI
-
-FUNGSI_KEMBALI APAKAH_SAMA TEKS1 TEKS2
-    SIMPAN P1 0
-    SIMPAN P2 0
-    PANGGIL_KEMBALI P1 HITUNG_PANJANG TEKS1
-    PANGGIL_KEMBALI P2 HITUNG_PANJANG TEKS2
-    
-    BILA_BEDA P1 P2
-        KEMBALIKAN 0
-    BATAS_BILA
-    
-    SIMPAN I 0
-    SELAMA_KURANG I P1
-        SIMPAN K1 0
-        SIMPAN K2 0
-        AMBIL_KARAKTER K1 TEKS1 I
-        AMBIL_KARAKTER K2 TEKS2 I
-        BILA_BEDA K1 K2
-            KEMBALIKAN 0
-        BATAS_BILA
-        NAIK I
-    BATAS_SELAMA
-    KEMBALIKAN 1
-BATAS_FUNGSI
-
-FUNGSI_KEMBALI APAKAH_KOSONG TEKS
-    SIMPAN P 0
-    PANGGIL_KEMBALI P HITUNG_PANJANG TEKS
-    BILA_SAMA P 0
-        KEMBALIKAN 1
-    BATAS_BILA
-    KEMBALIKAN 0
-BATAS_FUNGSI
+PROGRAM_UTAMA
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| STRING v2.0 - Manipulasi Teks       |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| GABUNG(a,b)     - Concat            |"
+    CETAK_TEKS "| POTONG(s,awal,akhir) - Substring    |"
+    CETAK_TEKS "| PANJANG(s)      - Length            |"
+    CETAK_TEKS "| CARI(s,cari)    - Find              |"
+    CETAK_TEKS "+--------------------------------------+"
+BATAS_PROGRAM

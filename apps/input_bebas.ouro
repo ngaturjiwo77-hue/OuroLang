@@ -1,0 +1,32 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/masukan.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/math.ouro"
+
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   PROGRAM INPUT BEBAS               |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Masukkan angka, Ouro hitung         |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS ""
+
+    CETAK_TEKS "Angka pertama: "
+    BACA A
+    CETAK_TEKS "Angka kedua: "
+    BACA B
+
+    SIMPAN C 0
+    TAMBAH C A
+    TAMBAH C B
+
+    CETAK_TEKS ""
+    CETAK_TEKS "Hasil "
+    CETAK_ANGKA A
+    CETAK_TEKS " + "
+    CETAK_ANGKA B
+    CETAK_TEKS " = "
+    CETAK_ANGKA C
+
+    CETAK_TEKS ""
+    CETAK_TEKS "[OK] Selesai"
+BATAS_PROGRAM

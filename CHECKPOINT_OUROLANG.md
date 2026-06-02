@@ -1,0 +1,1 @@
+Halo_dari_Ouro!

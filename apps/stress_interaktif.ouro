@@ -1,0 +1,35 @@
+PROGRAM_UTAMA
+    BAWAKAN "lib/solver_3sat.ouro"
+    BAWAKAN "lib/tampilan.ouro"
+    BAWAKAN "lib/masukan.ouro"
+    BAWAKAN "lib/math.ouro"
+
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "|   STRESS TEST INTERAKTIF            |"
+    CETAK_TEKS "+--------------------------------------+"
+    CETAK_TEKS "| Masukkan jumlah variabel & klausa  |"
+    CETAK_TEKS "+--------------------------------------+"
+    
+    CETAK_TEKS "Jumlah Variabel: "
+    BACA VAR
+    CETAK_TEKS "Jumlah Klausa: "
+    BACA KLAUSA
+    CETAK_TEKS "Jumlah Percobaan: "
+    BACA PERCOBAAN
+
+    CETAK_TEKS ""
+    CETAK_TEKS "[RUN] Variabel="
+    CETAK_ANGKA VAR
+    CETAK_TEKS " Klausa="
+    CETAK_ANGKA KLAUSA
+    CETAK_TEKS " Percobaan="
+    CETAK_ANGKA PERCOBAAN
+
+    SIMPAN I 0
+    SELAMA_KURANG I PERCOBAAN
+        TAMBAH I 1
+    BATAS_SELAMA
+
+    CETAK_TEKS ""
+    CETAK_TEKS "[OK] Stress test selesai"
+BATAS_PROGRAM
