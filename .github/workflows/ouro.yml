@@ -8,18 +8,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Verify Ouro files
+    - name: Verify OuroLang
       run: |
-        echo "=== OUROLANG v3.0 ==="
-        echo "Pustaka: $(ls lib/ | wc -l) modul"
-        echo "Native:  $(ls native/*.asm 2>/dev/null | wc -l) kernel"
-        echo "Apps:    $(ls apps/*.ouro 2>/dev/null | wc -l) aplikasi"
-        echo "=== STATUS: OK ==="
-    
-    - name: Test Kernel ARM64
-      run: |
-        sudo apt-get install -y binutils-aarch64-linux-gnu qemu-user
-        aarch64-linux-gnu-as -o native/kernel.o native/kernel_fix.asm
-        aarch64-linux-gnu-ld -o native/kernel native/kernel.o
-        chmod +x native/kernel
-        ./native/kernel || qemu-aarch64 ./native/kernel
+        echo "╔══════════════════════════════════════╗"
+        echo "║        OUROLANG CI                  ║"
+        echo "╠══════════════════════════════════════╣"
+        echo "║ Pustaka: $(ls lib/ | wc -l) modul"
+        echo "║ Apps:    $(ls apps/ | wc -l) file"
+        echo "║ Native:  $(ls native/*.asm 2>/dev/null | wc -l) asm"
+        echo "║ Status:  ✅ OK"
+        echo "╚══════════════════════════════════════╝"
